@@ -111,6 +111,7 @@ select {
     border: 1px solid black;
     display: flex;
     margin: 0 auto;
+    margin-top: 10px;
 }
 
 .subtitle{
@@ -120,6 +121,17 @@ select {
     line-height: 37px;
     letter-spacing: 0em;
     text-align: left;
+}
+
+
+.consalt_left_page_grid_second ul,
+.consalt_left_page_grid_third ul, 
+.consalt_right_page_grid_first ul, 
+.garnish_right_page_grid_third ul, 
+.pastry_right_page_grid_first ul{
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
 }
 
 /* ---------------HEADER--------------- */
@@ -156,20 +168,20 @@ h2{
 .head_img_wrapper{
     width: 50%;
     border-left: 1px solid black;
+    height: 100vh;
 }
-
 
 .head_img{
     background-image: url('images/headImg.jpg');
     background-size: contain;
     width: 100%;
-    height: 110vh;
+    height: 100vh;
 }
 
 /* ---------awards------------ */
 
 .awards{
-    padding-top: 10px;
+    
 }
 
 .awards_left_page{
@@ -180,8 +192,9 @@ h2{
 .awards_wrapper{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 40px 160px 160px 400px;
     gap: 0px 60px;
+    height: 80vh;
 }
 
 .subtitle_grid{
@@ -211,6 +224,7 @@ h2{
     background-image: url('images/appleImg.jpg');
     background-size: cover;
     width: 100%;
+    height: 51vh;
     grid-column: 1 / 3;
     grid-row: 4 / 5;
 }
@@ -283,16 +297,19 @@ h2{
 
 
 .awards_right_page{
-    padding: 81px;
     border-left: 1px solid black;
     width: 50%;
+}
+
+.awards_right_page_wrapper{
+    padding: 0px 81px 81px 81px;
 }
 
 .awards_right_page_img{
     background-image: url('images/awardsImg.jpg');
     background-size: cover;
-    /* height: 120vh; */
-    width: 100vw;
+    width: 100%;
+    height: 90vh;
 }
 
 .pages_number{
@@ -301,6 +318,10 @@ h2{
 }
 
 /* ----------consalt-------- */
+
+.consalt{
+    height: 100vh;
+}
 
 .consalt_left_page{
     padding: 81px;
@@ -311,8 +332,8 @@ h2{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 50px;
-
+    gap: 26px;
+    height: 80vh;
 }
 
 .consalt_left_page_grid_first{
@@ -327,10 +348,6 @@ h2{
     width: 100%;
 }
 
-.consalt_left_page_grid_second ul,.consalt_left_page_grid_third ul, .consalt_right_page_grid_first ul, .garnish_right_page_grid_third ul, .pastry_right_page_grid_first ul{
-    padding: 0;
-    padding-left: 20px;
-}
 
 .consalt_left_page_grid_third{
     width: 100%;
@@ -362,6 +379,12 @@ h2{
     font-weight: 400;
     line-height: 25px;
     text-align: center;
+
+    cursor: pointer;
+}
+
+.button_consalt{
+    margin-top: 23%;
 }
 
 /* --------right---------- */
@@ -376,7 +399,7 @@ h2{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
+    gap: 30px;
 }
 
 .consalt_right_page_grid_second{
@@ -391,21 +414,26 @@ h2{
     background-image: url('images/dinnerBottomImg.jpg');
     background-size: cover;
     width: 100%;
+    height: 39vh;
     grid-column: 1 / 3;
     grid-row: 2 / 2;
 }
 
 /* -------garnish-------- */
 
+
+
 .garnish_left_page{
     padding: 81px;
     width: 50%;
+
 }
 
 .garnish_left_page_grid_second{
     background-image: url('images/garnishTopImg.jpg');
     background-size: cover;
     width: 100%;
+    height: 50vh;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
@@ -423,8 +451,10 @@ h2{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 50px;
+}
 
-    
+.button_garnish{
+    margin-top: 41%;
 }
 
 /* ----right------- */
@@ -439,6 +469,7 @@ h2{
     background-image: url('images/HelpTopImg.jpg');
     background-size: cover;
     width: 100%;
+    height: 50vh;
     grid-column: 1 / 3;
     grid-row: 1 / 2;
 }
@@ -461,26 +492,42 @@ h2{
 /* ------monaLisa-------- */
 
 .mona_lisa{
-    margin-top: 10px;
+    height: 100vh;
+}
+
+.mona_lisa_wrapper{
     background-image: url('images/monaLizaImg.jpg');
-    background-size: contain;
+    background-size: cover;
     width: 100%;
-    height: 75vh;
+}
+
+.mona_lisa_left_page{
+    width: 50%;
+    border: 1px solid black;
+    z-index: 1000;
 }
 
 /* ---------pastry---- */
 
 .pastry_left_page{
+    width: 50%;
+}
+
+.pastry_left_page_wrapper{
     background-image: url('images/pastryLeftImg.jpg');
     background-size: cover;
-    width: 50%;
+    width: 100%;
+    height: 110vh;
 }
 
 /* -----right-------- */
 
-.sign{
-    padding: 30px 0px;
+.pastry_right_page_wrapper{
+    padding: 0px 81px 81px 81px;
+}
 
+.sign{
+    padding: 30px 81px;
     font-family: 'Open Sans', sans-serif;
     font-size: 10px;
     font-weight: 400;
@@ -493,20 +540,31 @@ h2{
     border-left: 1px solid black;
 }
 
+.pastry_right_page_wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 40px 40%;
+    gap: 30px; 
+}
+
+.pastry_right_page_grid_first{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
 .pastry_right_page_grid_second{
     background-image: url('images/lemonImg.jpg');
     background-size: cover;
     width: 100%;
+    height: 80vh;
     grid-column: 2 / 3;
-    grid-row: 1 / 2;
+    grid-row: 2 / 3;
 }
 
-.pastry_right_page_wrapper{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    gap: 50px; 
+.button_pastry{
+    margin-top: 41%;
 }
+
 
 /* ------footer---- */
 
