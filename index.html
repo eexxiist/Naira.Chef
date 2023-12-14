@@ -201,12 +201,28 @@
                     <div class="mail_icon"></div>
                     <a class="text_link_footer" href="mailto:nairanairena@gmail.com">nairanairena@gmail.com</a>
                 </div>
-                <input type="text" name="name" id="input_name" placeholder="Ваше имя">
-                <input type="number" name="mobile" id="input_mobile" placeholder="Номер телефона">
-                <a class="button_link" href="#"><button class="button_footer">MEOW</button></a>
+                <div class="register">
+                    <form action="mail.php" method="POST" class="register_form">
+                        <input class="register_name" type="text" name="fio" id="Name:" placeholder="Ваше имя" pattern="[A-Za-zА-Яа-яЁё]+" required/>
+                        <input class="register_surname" id="phone" type="tel" name="phone" minlength="16" placeholder="Ваш телефон" required/>
+                        <input id="register_send" type="submit" value="MEOW" name="senf">
+                    </form>
+                </div>
             </div>
         </div>
     </footer>
    </main>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+    <!-- Required for using jQuery input mask plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7/jquery.inputmask.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#phone").inputmask("+7 (999) 999-99-99");
+        });
+    </script>
+    
+    <script src="index.js"></script>
 </body>
 </html>

@@ -650,23 +650,21 @@ footer{
 }
 
 
-input {
+.register_name, .register_surname {
     margin-bottom: 20px;
     padding: 12px;
     display: block;
     width: 100%;
     box-sizing: border-box; 
-  }
-  
-
-  #input_name {
-    margin-top: 60px;
-  }
-  
-  #input_mobile, #input_name {
     border: none;
     background-color: #EFEFEF;
   }
+  
+
+  .register_name {
+    margin-top: 60px;
+  }
+  
 
   ::placeholder {
     font-family: 'Inter', sans-serif;
@@ -680,7 +678,7 @@ input {
 
   
 
-  .button_footer {
+  #register_send {
     display: block;
     margin: 0 auto; 
     padding: 10px 30px;
@@ -688,6 +686,7 @@ input {
     color: #fff;
     border: none;
     cursor: pointer;
+    width: 40%;
 
     font-family: 'Open Sans', sans-serif;
     font-size: 28px;
