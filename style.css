@@ -161,54 +161,141 @@ select {
 }
 
 /* ---------------HEADER--------------- */
-.head_title{
+/* Общие стили, которые применяются ко всем устройствам */
+.head_title {
     width: 50%;
 }
 
-.head_title_text{
+.head_title_text {
     margin: 0 auto;
     width: 50%;
     padding-top: 35%;
 }
 
-h1{
-    font-family: Playfair Display;
+h1, h2 {
     font-size: 30px;
-    font-weight: 500;
     line-height: 40px;
     text-align: center;
 }
 
-h2{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 40px;
-    text-align: center;
-}
-
-.head_title_text img{
+.head_title_text img {
+    display: block;
     margin: 0 auto;
 }
 
-.head_img_wrapper{
+.head_img_wrapper {
     width: 50%;
     border-left: 1px solid black;
     height: 100vh;
+    position: relative;
 }
 
-.head_img{
+.head_img {
+    position: absolute;
+    top: 0;
+    left: 0;
     background-image: url('images/headImg.jpg');
     background-size: 100% 100%;
     width: 100%;
     height: 100vh;
 }
 
+/* Медиа-запрос для устройств с максимальной шириной экрана 767 пикселей (мобильные устройства) */
+
+@media only screen and (min-width: 390px) and (max-width: 767px){
+    .wrapper{
+        flex-direction: column;
+    }
+    .head_title,
+    .head_title_text,
+    .head_img_wrapper {
+        width: 100%;
+        height: 90vh;
+    }
+
+    .head_img {
+        height: 90vh;
+    }
+
+    .head_title_text {
+        padding-top:35%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 844px) {
+    
+    .wrapper{
+        flex-direction: column;
+    }
+
+    .head_title,
+    .head_title_text,
+    .head_img_wrapper {
+        width: 100%;
+        height: 90vh;
+    }
+
+    .head_title_text {
+        padding-top: 35%;
+    }
+
+    h1, h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .head_img{
+        height: 90vh;
+    }
+}
+
+/* Медиа-запрос для устройств с шириной экрана от 768 до 991 пикселя (планшеты) */
+@media only screen and (min-width: 845px) and (max-width: 991px) {
+
+    .wrapper{
+        flex-direction: column;
+    }
+
+    .head_title,
+    .head_title_text,
+    .head_img_wrapper {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .head_title_text {
+        padding-top: 35%;
+        
+    }
+
+    h1, h2 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+}
+
+/* Медиа-запрос для устройств с шириной экрана от 992 до 1199 пикселей (небольшие ноутбуки и десктопы) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .head_title,
+    .head_title_text,
+    .head_img_wrapper {
+        width: 60%;
+    }
+
+    .head_title_text {
+        padding-top: 45%;
+    }
+
+    h1, h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+}
+
 /* ---------awards------------ */
 
-.awards{
+/* .awards{
     height: 100vh;
-}
+} */
 
 .awards_left_page{
     padding: 81px;
@@ -221,7 +308,7 @@ h2{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 40px 145px 145px 400px;
     gap: 0px 60px;
-    height: 80vh;
+    height: auto;
 }
 
 .subtitle_grid{
@@ -332,16 +419,134 @@ h2{
 .awards_right_page_img{
     background-image: url('images/awardsImg.jpg');
     background-size: 100% 100%;
-    /* width: 100%; */
     height: 82.5vh;
 }
+
+/* ------------------------- */
+
+/* Медиа-запрос для устройств с шириной экрана от 992 до 1199 пикселей */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .awards_left_page {
+        padding: 40px;
+        height: 100vh;
+    }
+
+    .sign{
+        padding: 0;
+    }
+
+    .awards_right_page_wrapper{
+        padding: 0px 40px 40px 40px;
+    }
+
+    .awards_right_page_img{
+        height: 85.5vh;
+    }
+
+    .awards_wrapper{
+        gap: 22px 60px;
+    }
+
+    .awards_text{
+        width: 70%;
+    }
+
+    .awards_text::before{
+        left: -35%;
+    }
+    .awards_text::after{
+        left: 92%;
+    }
+
+    .regalia{
+        font-size: 12px;
+    }
+
+    .contest{
+        padding-top: 7px;
+        font-size: 12px;
+    }
+}
+
+/* Медиа-запрос для устройств с шириной экрана от 845 до 991 пикселей */
+@media only screen and (min-width: 845px) and (max-width: 991px) {
+    .awards_left_page{
+        height: 100vh;
+        width: 100%;
+        padding: 81px;
+        border-bottom: 1px solid black;
+    }
+
+    .awards_right_page{
+        width: 100%;
+        height: 100vh;
+        border-top: 1px solid black;
+        margin-top: 10px;
+    }
+
+    /* .wrapper{
+        flex-direction: column;
+    } */
+
+    .sign{
+        padding: 0;
+    }
+
+    .awards_right_page_wrapper{
+        padding: 0px 100px 100px 100px;
+    }
+
+    .awards_right_page_img{
+        height: 84vh;
+        background-size: cover;
+    }
+
+}
+
+/* Медиа-запрос для устройств с шириной экрана от 768 до 844 пикселей */
+@media only screen and (min-width: 768px) and (max-width: 844px) {
+
+    .awards_left_page{
+        height: 100vh;
+        width: 100%;
+        padding: 81px;
+    }
+
+    .awards_right_page{
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+/* Медиа-запрос для устройств с шириной экрана от 390 до 767 пикселей */
+@media only screen and (min-width: 390px) and (max-width: 767px) {
+    .awards_left_page{
+        height: 100vh;
+        width: 100%;
+        padding: 81px;
+    }
+
+    .awards_right_page{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .awards_text {
+        padding-top: 10px;
+    }
+}
+
+
+
+
 
 
 /* ----------consalt-------- */
 
-.consalt{
+/* .consalt{
     height: 100vh;
-}
+} */
+
 
 .consalt_left_page{
     position: relative;
@@ -425,11 +630,51 @@ h2{
     grid-row: 2 / 2;
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .consalt_left_page,
+    .consalt_right_page {
+        padding: 30px; /* Изменение отступов на более широких экранах */
+    }
+}
+
+/* Медиа-запрос для устройств с шириной экрана от 845 до 991 пикселей */
+@media only screen and (min-width: 845px) and (max-width: 991px) {
+    .consalt_left_page,
+    .consalt_right_page {
+        padding: 81px;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .consalt_left_page{
+        border-bottom: 1px solid black;
+    }
+
+    .consalt_right_page{
+        border-top: 1px solid black;
+        margin-top: 10px;
+    }
+
+}
+
+/* Медиа-запрос для устройств с шириной экрана от 390 до 767 пикселей */
+@media only screen and (min-width: 390px) and (max-width: 767px) {
+    .consalt_left_page,
+    .consalt_right_page {
+        padding: 15px; /* Изменение отступов на самых узких экранах */
+    }
+
+    .consalt_left_page_wrapper,
+    .consalt_right_page_wrapper {
+        gap: 10px; /* Уменьшение промежутка между блоками на самых узких экранах */
+    }
+}
+
 /* -------garnish-------- */
 
-.garnish{
+/* .garnish{
     height: 100vh;
-}
+} */
 
 .garnish_left_page{
     position: relative;
@@ -500,11 +745,47 @@ h2{
     gap: 50px;
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .garnish_left_page{
+        height: 100vh;
+        width: 100%;
+        padding: 81px;
+    }
+
+    .garnish_right_page{
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+/* Медиа-запрос для устройств с шириной экрана от 845 до 991 пикселей */
+@media only screen and (min-width: 845px) and (max-width: 991px) {
+    .garnish_left_page{
+        height: 100vh;
+        width: 100%;
+        padding: 81px;
+        border-bottom: 1px solid black;
+    }
+
+    .garnish_right_page{
+        width: 100%;
+        height: 100vh;
+        border-top: 1px solid black;
+        margin-top: 10px;
+    }
+
+}
+
+/* Медиа-запрос для устройств с шириной экрана от 390 до 767 пикселей */
+@media only screen and (min-width: 390px) and (max-width: 767px) {
+   
+}
+
 /* ------monaLisa-------- */
 
-.mona_lisa{
+/* .mona_lisa{
     height: 100vh;
-}
+} */
 
 .mona_lisa_wrapper{
     background-image: url('images/monaLizaImg.jpg');
@@ -518,11 +799,25 @@ h2{
     z-index: 1000;
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+   
+}
+
+/* Медиа-запрос для устройств с шириной экрана от 845 до 991 пикселей */
+@media only screen and (min-width: 845px) and (max-width: 991px) {
+  
+}
+
+/* Медиа-запрос для устройств с шириной экрана от 390 до 767 пикселей */
+@media only screen and (min-width: 390px) and (max-width: 767px) {
+   
+}
+
 /* ---------pastry---- */
 
-.pastry{
+/* .pastry{
     height: 100vh;
-}
+} */
 
 .pastry_left_page{
     width: 50%;
@@ -580,6 +875,42 @@ h2{
 
 .button_pastry{
     margin-top: 41%;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .pastry_left_page{
+        height: 100vh;
+        width: 100%;
+        padding: 81px;
+    }
+
+    .pastry_right_page{
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+/* Медиа-запрос для устройств с шириной экрана от 845 до 991 пикселей */
+@media only screen and (min-width: 845px) and (max-width: 991px) {
+    .pastry_left_page{
+        height: 100vh;
+        width: 100%;
+        padding: 81px;
+        border-bottom: 1px solid black;
+    }
+
+    .pastry_right_page{
+        width: 100%;
+        height: 100vh;
+        border-top: 1px solid black;
+        margin-top: 10px;
+    }
+
+}
+
+/* Медиа-запрос для устройств с шириной экрана от 390 до 767 пикселей */
+@media only screen and (min-width: 390px) and (max-width: 767px) {
+   
 }
 
 
@@ -697,6 +1028,20 @@ footer{
 
   .button_link{
     text-decoration: none;
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+   
+  }
+  
+  /* Медиа-запрос для устройств с шириной экрана от 845 до 991 пикселей */
+  @media only screen and (min-width: 845px) and (max-width: 991px) {
+      
+  }
+  
+  /* Медиа-запрос для устройств с шириной экрана от 390 до 767 пикселей */
+  @media only screen and (min-width: 390px) and (max-width: 767px) {
+     
   }
 
   /* ------numbers page-------- */
