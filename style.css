@@ -160,6 +160,15 @@ select {
     padding: 0px 81px 81px 81px;
 }
 
+.sign{
+    padding: 30px 81px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: right;
+}
+
 /* ---------------HEADER--------------- */
 /* Общие стили, которые применяются ко всем устройствам */
 .head_title {
@@ -489,11 +498,12 @@ h1, h2 {
     } */
 
     .sign{
-        padding: 0;
+        padding: 35px 81px;
     }
 
     .awards_right_page_wrapper{
-        padding: 0px 100px 100px 100px;
+        padding: 0px 81px 81px 81px;
+        height: 100vh;
     }
 
     .awards_right_page_img{
@@ -542,10 +552,6 @@ h1, h2 {
 
 
 /* ----------consalt-------- */
-
-/* .consalt{
-    height: 100vh;
-} */
 
 
 .consalt_left_page{
@@ -607,6 +613,7 @@ h1, h2 {
 
 
 .consalt_right_page_wrapper{
+    position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -622,12 +629,22 @@ h1, h2 {
 }
 
 .consalt_right_page_grid_third{
+    position: absolute;
+    top: 0;
+    left: 0;
     background-image: url('images/dinnerBottomImg.jpg');
     background-size: cover;
+    background-position: center;
     width: 100%;
-    height: 39vh;
+    height: 45vh;
     grid-column: 1 / 3;
     grid-row: 2 / 2;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1536px){
+    .sub_text{
+        font-size: 16px;
+    }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -653,6 +670,7 @@ h1, h2 {
     .consalt_right_page{
         border-top: 1px solid black;
         margin-top: 10px;
+        padding: 0px;
     }
 
 }
@@ -687,29 +705,35 @@ h1, h2 {
     position: relative;
 }
 
+.garnish_left_page_wrapper{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px;
+}
+
 .garnish_left_page_grid_second{
     background-image: url('images/garnishTopImg.jpg');
-    background-size: 100% 100%;
-    /* width: 100%; */
+    background-size: cover;
+    background-position: center bottom;
+    width: 100%;
     height: 40vh;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
 
 .garnish_left_page_grid_third{
+    position: absolute;
+    left: 0;
+    top: 0;
     background-image: url('images/garnishBottomImg.jpg');
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center top;
     width: 100%;
     height: 40vh;
     grid-column: 1 / 3;
     grid-row: 2 / 2;
-}
-
-.garnish_left_page_wrapper{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 50px;
 }
 
 /* ----right------- */
@@ -774,6 +798,14 @@ h1, h2 {
         margin-top: 10px;
     }
 
+    .garnish_left_page_wrapper{
+        gap: 26px;
+    }
+
+    .garnish_right_page_wrapper{
+        gap: 26px;
+    }
+
 }
 
 /* Медиа-запрос для устройств с шириной экрана от 390 до 767 пикселей */
@@ -783,14 +815,19 @@ h1, h2 {
 
 /* ------monaLisa-------- */
 
-/* .mona_lisa{
-    height: 100vh;
-} */
+.mona_lisa{
+    position: relative;
+}
 
 .mona_lisa_wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
     background-image: url('images/monaLizaImg.jpg');
     background-size: cover;
+    background-position: center;
     width: 100%;
+    /* height: 100vh; */
 }
 
 .mona_lisa_left_page{
@@ -837,14 +874,6 @@ h1, h2 {
 
 /* -----right-------- */
 
-.sign{
-    padding: 30px 81px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 14px;
-    text-align: right;
-}
 
 .pastry_right_page{
     width: 50%;
@@ -895,13 +924,12 @@ h1, h2 {
     .pastry_left_page{
         height: 100vh;
         width: 100%;
-        padding: 81px;
         border-bottom: 1px solid black;
     }
 
     .pastry_right_page{
         width: 100%;
-        height: 100vh;
+        height: 98vh;
         border-top: 1px solid black;
         margin-top: 10px;
     }
@@ -919,6 +947,7 @@ h1, h2 {
 footer{
     background-image: url('images/footerImg.jpg');
     background-size: cover;
+    background-position: center center;
     width: 100%;
     height: 100vh;
 }
@@ -1007,8 +1036,6 @@ footer{
     opacity: 0.6;
   }
 
-  
-
   #register_send {
     display: block;
     margin: 0 auto; 
@@ -1036,7 +1063,9 @@ footer{
   
   /* Медиа-запрос для устройств с шириной экрана от 845 до 991 пикселей */
   @media only screen and (min-width: 845px) and (max-width: 991px) {
-      
+    .footer_right_page_form{
+        transform: translate(60%, 80%)
+    }
   }
   
   /* Медиа-запрос для устройств с шириной экрана от 390 до 767 пикселей */
