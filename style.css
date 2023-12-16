@@ -748,12 +748,16 @@ h1, h2 {
     background-image: url('images/consaltLeftImg.jpg');
     background-size: cover;
     width: 100%;
+    height: 38vh;
+    background-position: center;
 }
 
 .consalt_left_page_grid_fourth{
     background-image: url('images/consaltRightImg.jpg');
     background-size: cover;
+    background-position: center;
     width: 100%;
+    height: 40.5vh;
 }
 
 
@@ -805,6 +809,12 @@ h1, h2 {
 }
 
 .consalt_right_page_grid_third{
+    position: relative;
+    grid-column: 1 / 3;
+    grid-row: 2 / 2;
+}
+
+.consalt_right_page_grid_wrap{
     position: absolute;
     top: 0;
     left: 0;
@@ -812,23 +822,120 @@ h1, h2 {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 45vh;
-    grid-column: 1 / 3;
-    grid-row: 2 / 2;
+    height: 41vh;
 }
 
-/* Large desktops and laptops */
-@media (min-width: 1200px) {
+.consalt_left_page::after{
+    position: absolute;
+    content: '4';
+    top: 94vh;
+    left: 10vh;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+  }
+
+  .consalt_right_page::after{
+    position: absolute;
+    content: '5';
+    top: 94vh;
+    left: 89%;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+  }
+
+
+@media only screen and (min-width: 1441px) and (max-width: 1536px) {
     .sub_text{
         font-size: 16px;
     }
 }
 
+/* Large desktops and laptops */
+@media only screen and (min-width: 1200px) and (max-width: 1440px)  {
+
+    .text{
+        font-size: 16px;
+    }
+
+    .sub_text{
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .consalt_right_page_wrapper{
+        gap: 56px 10px;
+    }
+
+    .consalt_left_page_wrapper{
+        gap: 42px 10px;
+    }
+
+    .consalt_left_page_grid_fourth{
+        height: 40.5vh;
+    }
+
+    .consalt_left_page_grid_first{
+        height: 36vh;
+    }
+
+    .consalt_right_page_grid_third{
+        height: 42vh;
+    }
+
+    .button{
+        font-size: 13px;
+    }
+}
+
 /* Portrait tablets and medium desktops */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .consalt_left_page,
-    .consalt_right_page {
-        padding: 30px;
+    .consalt_left_page {
+        height: 100vh;
+        padding: 44px 40px 40px 40px;
+    }
+
+    .consalt_right_page_box{
+        padding: 0px 40px 40px 40px;
+    }
+
+    .consalt_right_page_wrapper{
+        gap: 64px 26px;
+    }
+
+    .subtitle{
+        font-size: 26px;
+        padding-bottom: 9px;
+    }
+
+    .sub_text{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .text{
+        font-size: 16px;
+    }
+
+    .button{
+        font-size: 13px;
+    }
+
+    .consalt_left_page_wrapper{
+        gap: 29px;
+    }
+
+    .consalt_left_page_grid_fourth, .consalt_right_page_grid_third{
+        height: 45.5vh;
+    }
+
+    .consalt_left_page::after{
+        left: 5vh;
+    }
+
+    .consalt_right_page::after{
+        left: 91%;
     }
 }
 
@@ -842,28 +949,104 @@ h1, h2 {
     }
 
     .consalt_left_page{
-        border-bottom: 1px solid black;
+        border: 1px solid black;
     }
 
     .consalt_right_page{
-        border-top: 1px solid black;
+        border: 1px solid black;
         margin-top: 10px;
         padding: 0px;
+    }
+
+    .consalt_right_page_grid_wrap{
+        height: 36vh;
+    }
+
+
+    .consalt_left_page_grid_first{
+        background-position: center bottom;
+    }
+
+    .consalt_left_page_grid_fourth{
+        background-position: center right;
+    }
+
+    .consalt_right_page_grid_third{
+        height: 43vh;
+    }
+
+    .consalt_right_page_wrapper{
+        gap: 32px 26px;
+    }
+
+    .subtitle{
+        line-height: 30px;
+    }
+
+    .consalt_left_page::after, .consalt_right_page::after{
+        top: 92vh;
     }
 
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-    .consalt_left_page,
-    .consalt_right_page {
-        padding: 15px; /* Изменение отступов на самых узких экранах */
+    .consalt_left_page {
+        padding: 81px;
+        width: 100%;
     }
 
-    .consalt_left_page_wrapper,
-    .consalt_right_page_wrapper {
-        gap: 10px; /* Уменьшение промежутка между блоками на самых узких экранах */
+    .consalt_left_page{
+        border: 1px solid black;
     }
+
+    .consalt_right_page{
+        border: 1px solid black;
+        margin-top: 10px;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .text, .sub_text, .button{
+        font-size: 14px;
+    }
+
+    .consalt_left_page::after, .consalt_right_page::after{
+        top: 91vh;
+    }
+
+}
+
+@media (max-width: 663px){
+
+    .subtitle{
+        line-height: 25px;
+    }
+    .sub_text, .button{
+        line-height: 20px;
+    }
+
+    .button{
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .consalt_right_page_grid_wrap{
+        height: 35vh;
+    }
+
+    .consalt_right_page::after{
+        top: 81vh;
+        left: 86%;
+    }
+
+    .consalt_left_page_grid_fourth{
+        height: 38.5vh;
+    }
+}
+
+@media (max-width: 580px){
+   
 }
 
 /* Landscape phones and smaller */
@@ -1258,26 +1441,6 @@ footer{
   }
 
   /* ------numbers page-------- */
-
-  .consalt_left_page::after{
-    position: absolute;
-    content: '4';
-    top: 91vh;
-    left: 4vw;
-    bottom: 0;
-    right: 0;
-    width: 10px;
-  }
-
-  .consalt_right_page::after{
-    position: absolute;
-    content: '5';
-    top: 91vh;
-    left: 35.5vw;
-    bottom: 0;
-    right: 0;
-    width: 10px;
-  }
 
 
   .garnish_left_page::after{
