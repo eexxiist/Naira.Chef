@@ -725,6 +725,21 @@ h1, h2 {
         line-height: 19px;
     }
 
+    .regalia{
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .contest{
+        font-size: 8px;
+        padding: 0;
+    }
+
+    .awards_text::before, .awards_text::after{
+        width: 50%;
+        height: 13vh;
+    }
+
     .awards_left_page::after{
         top: 75vh;
         left: 8vw;
