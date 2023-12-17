@@ -689,7 +689,7 @@ h1, h2 {
     .awards_left_page{
         height: 80vh;
         width: 100%;
-        padding: 35px;
+        padding: 20px;
     }
 
     .awards_right_page{
@@ -698,7 +698,7 @@ h1, h2 {
     }
 
     .awards_right_page_wrapper{
-        padding: 0px 35px 35px 35px;
+        padding: 0px 20px 20px 20px;
     }
 
     .awards_text {
@@ -719,6 +719,10 @@ h1, h2 {
 
     .awards_right_page_img{
         height: 68vh;
+    }
+
+    .text{
+        line-height: 19px;
     }
 
     .awards_left_page::after{
