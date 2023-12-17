@@ -86,12 +86,6 @@ select {
   }
 }
 
-@font-face {
-  font-family: "Rockwell";
-  src: url("fonts/ROCK.TTF");
-  font-display: swap;
-}
-
 
 .align-center {
   align-items: center;
@@ -461,7 +455,11 @@ h1, h2 {
 
 /* ------------------------- */
 
-@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+@media only screen and (min-width: 1440px) and (max-width: 1920px) {
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
     .sub_text{
         font-size: 16px;
     }
@@ -481,6 +479,11 @@ h1, h2 {
     .awards_wrapper{
         gap: 0px 56px;
     }
+
+    .awards_img{
+        height: 46vh;
+    }
+
 
     .awards_left_page::after{
         top: 92vh;
