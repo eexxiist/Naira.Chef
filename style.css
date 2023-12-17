@@ -1047,7 +1047,7 @@ h1, h2 {
     }
 
     .text, .sub_text, .button{
-        font-size: 14px;
+        font-size: 14px;line-height: 18px;
     }
 
     .consalt_left_page::after, .consalt_right_page::after{
