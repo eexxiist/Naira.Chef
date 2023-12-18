@@ -711,11 +711,11 @@ h1, h2 {
     }
 
     .awards_img{
-        height: 28vh;
+        height: 34vh;
     }
 
     .sign{
-        padding: 18px 48px;
+        padding: 18px 22px;
     }
 
     .awards_right_page_img{
@@ -855,7 +855,7 @@ h1, h2 {
 .consalt_left_page::after{
     position: absolute;
     content: '4';
-    top: 94vh;
+    top: 93vh;
     left: 10vh;
     bottom: 0;
     right: 0;
@@ -865,7 +865,7 @@ h1, h2 {
   .consalt_right_page::after{
     position: absolute;
     content: '5';
-    top: 94vh;
+    top: 93vh;
     left: 89%;
     bottom: 0;
     right: 0;
@@ -1081,7 +1081,7 @@ h1, h2 {
     }
 
     .consalt_left_page_grid_fourth{
-        height: 38.5vh;
+        height: 39vh;
     }
 }
 
@@ -1095,7 +1095,7 @@ h1, h2 {
     }
 
     .consalt_right_page_grid_wrap{
-        height: 34vh;
+        height: 30vh;
     }
 
     .consalt_left_page::after{
@@ -1127,7 +1127,7 @@ h1, h2 {
     }
 
     .consalt_left_page{
-        padding: 20px;
+        padding: 20px 20px 36px 20px;
     }
 
     .consalt_right_page_box{
@@ -1137,10 +1137,6 @@ h1, h2 {
 }
 
 /* -------garnish-------- */
-
-/* .garnish{
-    height: 100vh;
-} */
 
 .garnish_left_page{
     position: relative;
@@ -1170,7 +1166,6 @@ h1, h2 {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
-
 
 
 .garnish_left_page_grid_third{
@@ -1222,6 +1217,26 @@ h1, h2 {
     grid-template-rows: repeat(2, 1fr);
     gap: 50px;
 }
+
+.garnish_left_page::after{
+    position: absolute;
+    content: '6';
+    top: 96vh;
+    left: 4vw;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+  }
+
+  .garnish_right_page::after{
+    position: absolute;
+    content: '7';
+    top: 96vh;
+    left: 35.5vw;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+  }
 
 @media only screen and (min-width: 1200px) and (max-width: 1440px)  {
 
@@ -1365,24 +1380,22 @@ h1, h2 {
 /* ------monaLisa-------- */
 
 .mona_lisa{
-    /* position: relative; */
-}
-
-.mona_lisa_wrapper{
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     background-image: url('images/monaLizaImg.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
-    /* height: 100vh; */
+    height: 100vh;
 }
 
 .mona_lisa_left_page{
     width: 50%;
-    border: 1px solid black;
-    z-index: 1000;
+}
+
+.mona_lisa_right_page{
+    position: relative;
+    width: 50%;
+    border-left: 1px solid black;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1440px)  {
@@ -1396,26 +1409,34 @@ h1, h2 {
 
 /* Portrait tablets and small desktops */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .mona_lisa_left_page{
+        display: none;
+    }
 
+    .mona_lisa_right_page{
+        width: 100%;
+        border: 1px solid black;
+        background-image: url('images/monaLizaImg_adapt.jpg');
+        background-size: cover;
+        background-position: center right;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .mona_lisa{
+        background-image: none;
+    }
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-
+    .mona_lisa{
+        background-image: url('images/monaLizaImg480.jpg');
+        background-position: center center;
+    }
 }
 
-@media (max-width: 663px){
-    
-}
 
-@media (max-width: 580px){
-    
-}
-
-/* Landscape phones and smaller */
-@media (max-width: 480px) {
-
-}
 
 /* ---------pastry---- */
 
@@ -1440,6 +1461,7 @@ h1, h2 {
 
 
 .pastry_right_page{
+    position: relative;
     width: 50%;
     border-left: 1px solid black;
 }
@@ -1473,6 +1495,16 @@ h1, h2 {
 .button_pastry{
     margin-top: 41%;
 }
+
+.pastry_right_page::after{
+    position: absolute;
+    content: '11';
+    top: 91vh;
+    left: 35.5vw;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+  }
 
 @media only screen and (min-width: 1200px) and (max-width: 1440px)  {
 
@@ -1562,22 +1594,27 @@ h1, h2 {
 
     .pastry_right_page_wrapper{
         padding: 0px 20px 20px 20px;
-        height: 85vh;
+        height: 92vh;
         display: block;
     }
 
     .button_pastry{
-        bottom: 3%;
+        bottom: -5%;
+        margin-bottom: 10px;
     }
 
     .pastry_right_page_grid_first{
-        height: 40vh;
+        height: 42vh;
+        padding-bottom: 15px;
     }
 
     .pastry_right_page_grid_second {
-        height: 41vh;
+        margin-top: 20px;
+        height: 42vh;
         background-position:  center center;
     }
+
+    
 }
 
 
@@ -1708,12 +1745,28 @@ footer{
 
 /* Portrait tablets and small desktops */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .footer_right_page_form{
+        position: absolute;
+        transform: translate(20%, 70%);
+    }
 
+    footer{
+        background-image: url('images/footer_mob.jpg');
+        background-position: center;
+    }
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
 
+    .footer_right_page_form{
+        position: absolute;
+        transform: translate(-50%, 60%)
+    }
+
+    .footer_right_page{
+        width: 100%;
+    }
 
 }
 
@@ -1722,46 +1775,9 @@ footer{
 }
 
 @media (max-width: 580px){
-
 }
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
-    footer{
-        background-image: url('images/footer_mob.jpg');
-        background-position: center;
-    }
-
-    .footer_right_page_form{
-        position: absolute;
-       
-        transform: translate(-50%, 60%)
-    }
-
-    .footer_right_page{
-        width: 100%;
-    }
+    
 }
-
-  /* ------numbers page-------- */
-
-
-  .garnish_left_page::after{
-    position: absolute;
-    content: '6';
-    top: 91vh;
-    left: 4vw;
-    bottom: 0;
-    right: 0;
-    width: 10px;
-  }
-
-  .garnish_right_page::after{
-    position: absolute;
-    content: '7';
-    top: 91vh;
-    left: 35.5vw;
-    bottom: 0;
-    right: 0;
-    width: 10px;
-  }
