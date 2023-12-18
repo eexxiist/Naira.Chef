@@ -1352,7 +1352,7 @@ h1, h2 {
     }
 
     .garnish_left_page_wrapper, .garnish_right_page_wrapper{
-        gap: 33px 26px;
+        gap: 33px 8px;
     }
 
     .garnish_right_page_grid_second{
@@ -1365,7 +1365,7 @@ h1, h2 {
 /* ------monaLisa-------- */
 
 .mona_lisa{
-    position: relative;
+    /* position: relative; */
 }
 
 .mona_lisa_wrapper{
@@ -1534,10 +1534,6 @@ h1, h2 {
         width: 100%;
     }
 
-    .garnish_right_page_wrapper{
-        gap: 50px 26px;
-    }
-
     .pastry_right_page_wrapper{
         height: 88vh;
     }
@@ -1566,10 +1562,21 @@ h1, h2 {
 
     .pastry_right_page_wrapper{
         padding: 0px 20px 20px 20px;
+        height: 85vh;
+        display: block;
     }
 
-    .pastry_right_page_wrapper{
-        height: 85vh;
+    .button_pastry{
+        bottom: 3%;
+    }
+
+    .pastry_right_page_grid_first{
+        height: 40vh;
+    }
+
+    .pastry_right_page_grid_second {
+        height: 41vh;
+        background-position:  center center;
     }
 }
 
@@ -1689,107 +1696,33 @@ footer{
     text-decoration: none;
   }
 
-  @media only screen and (min-width: 992px) and (max-width: 1199px) {
-   
-  }
-  
-  /* Медиа-запрос для устройств с шириной экрана от 845 до 991 пикселей */
-  @media only screen and (min-width: 845px) and (max-width: 991px) {
-    .footer_right_page_form{
-        transform: translate(60%, 80%)
-    }
-  }
-  
-  /* Медиа-запрос для устройств с шириной экрана от 390 до 767 пикселей */
-  @media only screen and (min-width: 390px) and (max-width: 767px) {
      
-  }
 
-  @media only screen and (min-width: 1200px) and (max-width: 1440px)  {
+@media only screen and (min-width: 1200px) and (max-width: 1440px)  {
 
-    .garnish_right_page_wrapper, .garnish_left_page_wrapper{
-        gap: 27px 12px;
-    }
-
-    .garnish_right_page_grid_first{
-        height: 41vh;
-    }
 }
 /* Portrait tablets and medium desktops */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-
-    .pastry_right_page_wrapper{
-        padding: 0px 40px 40px 40px;
-    }
-
-    .pastry_right_page_grid_first{
-        height: 89vh;
-    }
-
-    .pastry_right_page_grid_second{
-        height: 89vh;
-    }
     
 }
 
 /* Portrait tablets and small desktops */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
-    .pastry_left_page{
-        border: 1px solid black;
-        width: 100%;
-    }
-
-    .pastry_right_page{
-        width: 100%;
-        border: 1px solid black;
-        margin-top: 10px;
-        padding: 0px;
-        height: 98vh;
-    }
-
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
 
-    .pastry_left_page{
-        border: 1px solid black;
-        width: 100%;
-    }
-
-    .pastry_right_page{
-        border: 1px solid black;
-        margin-top: 10px;
-        padding: 0px;
-        width: 100%;
-    }
-
-    .garnish_right_page_wrapper{
-        gap: 50px 26px;
-    }
-
-    .pastry_right_page_wrapper{
-        height: 88vh;
-    }
-
-    .pastry_right_page_grid_second{
-        height: 80vh;
-    }
 
 }
 
 @media (max-width: 663px){
-    .text_pastry{
-        padding-bottom: 10px;
-    }
+
 }
 
 @media (max-width: 580px){
 
-    .pastry_right_page_wrapper{
-        padding: 0px 45px 45px 45px;
-    }
 }
 
 /* Landscape phones and smaller */
