@@ -230,7 +230,7 @@ h1, h2 {
     }
 
     .head_title_text {
-        padding-top:35%;
+        padding-top: 50%;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 844px) {
@@ -703,10 +703,11 @@ h1, h2 {
 
     .awards_text {
         padding-top: 35px;
+        width: 83%;
     }
 
     .awards_wrapper{
-        gap: 11px 23px;
+        gap: 0px 23px;
     }
 
     .awards_img{
@@ -1062,7 +1063,7 @@ h1, h2 {
         line-height: 25px;
     }
     .sub_text, .button{
-        line-height: 20px;
+        line-height: 17px;
     }
 
     .button{
@@ -1703,6 +1704,111 @@ footer{
   @media only screen and (min-width: 390px) and (max-width: 767px) {
      
   }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1440px)  {
+
+    .garnish_right_page_wrapper, .garnish_left_page_wrapper{
+        gap: 27px 12px;
+    }
+
+    .garnish_right_page_grid_first{
+        height: 41vh;
+    }
+}
+/* Portrait tablets and medium desktops */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .pastry_right_page_wrapper{
+        padding: 0px 40px 40px 40px;
+    }
+
+    .pastry_right_page_grid_first{
+        height: 89vh;
+    }
+
+    .pastry_right_page_grid_second{
+        height: 89vh;
+    }
+    
+}
+
+/* Portrait tablets and small desktops */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .pastry_left_page{
+        border: 1px solid black;
+        width: 100%;
+    }
+
+    .pastry_right_page{
+        width: 100%;
+        border: 1px solid black;
+        margin-top: 10px;
+        padding: 0px;
+        height: 98vh;
+    }
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+    .pastry_left_page{
+        border: 1px solid black;
+        width: 100%;
+    }
+
+    .pastry_right_page{
+        border: 1px solid black;
+        margin-top: 10px;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .garnish_right_page_wrapper{
+        gap: 50px 26px;
+    }
+
+    .pastry_right_page_wrapper{
+        height: 88vh;
+    }
+
+    .pastry_right_page_grid_second{
+        height: 80vh;
+    }
+
+}
+
+@media (max-width: 663px){
+    .text_pastry{
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 580px){
+
+    .pastry_right_page_wrapper{
+        padding: 0px 45px 45px 45px;
+    }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+    footer{
+        background-image: url('images/footer_mob.jpg');
+        background-position: center;
+    }
+
+    .footer_right_page_form{
+        position: absolute;
+       
+        transform: translate(-50%, 60%)
+    }
+
+    .footer_right_page{
+        width: 100%;
+    }
+}
 
   /* ------numbers page-------- */
 
