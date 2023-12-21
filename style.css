@@ -44,6 +44,7 @@ body {
   background: white;
   justify-content: center;
   overflow-x: hidden;
+  padding: 0;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -100,10 +101,31 @@ select {
 }
 /* ----------------ALL----------------- */
 
-.wrapper{
+header{
+    padding-top: 10px;
+}
+
+header .wrapper{
     max-width: 1640px;
+}
+
+.wrapper{
+    width: 100%;
     border: 1px solid black;
     display: flex;
+    margin: 0 auto;
+    /* margin-top: 10px; */
+
+    height: calc(100vh - 20px);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    max-width: 1640px;
+
     margin: 0 auto;
     margin-top: 10px;
 }
@@ -134,7 +156,6 @@ select {
     width: 100%;
     position: absolute;
     bottom: 0;
-
     border: 1px solid black;
     background: none;
     padding: 8px;
@@ -165,14 +186,57 @@ select {
 
 /* ---------------HEADER--------------- */
 /* Общие стили, которые применяются ко всем устройствам */
+
+.lang_buttons{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    
+    width: 80px;
+}
+
+.button_rus, .button_en{
+    /* width: 10%; */
+    
+    border: 1px solid black;
+    border-radius: 10px;
+    background: none;
+    padding: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+
+    display: block;
+    box-sizing: border-box;
+}
+
+.button_en.en_lang{
+    display: none !important;
+}
+
 .head_title {
     width: 50%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .head_title_text {
     margin: 0 auto;
     width: 50%;
-    padding-top: 35%;
+    /* padding-top: 35%; */
+}
+
+.head_title_text.en_lang{
+    display: none !important;
 }
 
 h1, h2 {
@@ -189,7 +253,7 @@ h1, h2 {
 .head_img_wrapper {
     width: 50%;
     border-left: 1px solid black;
-    height: 100vh;
+    height: 100%;
     position: relative;
 }
 
@@ -200,133 +264,108 @@ h1, h2 {
     background-image: url('images/headImg.jpg');
     background-size: 100% 100%;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
-/* Медиа-запрос для устройств с максимальной шириной экрана 767 пикселей (мобильные устройства) */
+button.lake{
+    position: absolute;
+    z-index: 1000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px;
+    cursor: pointer;
+    top: 45%;
+    left: calc(50% - 180px);
+}
 
-@media only screen and (min-width: 390px) and (max-width: 767px){
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .head_title_text{
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .head_title_text{
+        width: 100%;
+    }
+
     .wrapper{
         flex-direction: column;
+        height: 100%;
         border: none;
-    }
-    .head_title,
-    .head_title_text,
-    .head_img_wrapper {
-        width: 100%;
-        height: 90vh;
     }
 
     .head_title, .head_img_wrapper{
+        width: 100%;
         border: 1px solid black;
-    }
-
-    .head_img_wrapper{
         margin-top: 10px;
+        height: calc(100vh - 14px);
     }
 
-    .head_img {
-        height: 90vh;
-    }
-
-    .head_title_text {
-        padding-top: 50%;
+    .head_title{
+        height: 100vh;
     }
 }
-@media only screen and (min-width: 768px) and (max-width: 844px) {
-    
+
+
+@media (max-width: 767px){
+
+    .head_title{
+        height: 100vh;
+    }
+}
+
+@media (max-width: 663px){
+
     .wrapper{
         flex-direction: column;
-    }
-
-    .head_title,
-    .head_title_text,
-    .head_img_wrapper {
-        width: 100%;
-        height: 90vh;
-    }
-
-    .head_title_text {
-        padding-top: 35%;
+        border: none;
     }
 
     h1, h2 {
         font-size: 20px;
         line-height: 30px;
     }
-
-    .head_img{
-        height: 90vh;
-    }
 }
 
-/* Медиа-запрос для устройств с шириной экрана от 768 до 991 пикселя (планшеты) */
-@media only screen and (min-width: 845px) and (max-width: 991px) {
-
-    .wrapper{
-        flex-direction: column;
-    }
-
-    .head_title,
-    .head_title_text,
-    .head_img_wrapper {
-        width: 100%;
-        height: 100vh;
-    }
-
-    .head_title_text {
-        padding-top: 35%;
-        
-    }
-
-    h1, h2 {
-        font-size: 25px;
-        line-height: 35px;
-    }
-}
-
-/* Медиа-запрос для устройств с шириной экрана от 992 до 1199 пикселей (небольшие ноутбуки и десктопы) */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .head_title,
-    .head_title_text,
-    .head_img_wrapper {
-        width: 60%;
-    }
-
-    .head_title_text {
-        padding-top: 45%;
-    }
-
-    h1, h2 {
-        font-size: 28px;
-        line-height: 38px;
+@media (max-width: 580px){
+    .head_title_text{
+        width: 70%;
     }
 }
 
 /* ---------awards------------ */
 
-/* .awards{
-    height: 100vh;
-} */
-
 .awards_left_page{
     position: relative;
     padding: 81px;
     width: 50%;
-    height: 80vh;
+    height: 100%;
 }
 
 .awards_wrapper{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 40px 145px 145px 400px;
+    grid-template-rows: 40px 145px 145px auto;
     gap: 0px 60px;
-    height: auto;
+    height: 100%;
 }
 
 .subtitle_grid{
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+}
+
+.award {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    gap: 60px;
 }
 
 .award_first{
@@ -351,9 +390,10 @@ h1, h2 {
     background-image: url('images/appleImg.jpg');
     background-size: 100% 100%;
     width: 100%;
-    height: 44vh;
+    height: 85%;
     grid-column: 1 / 3;
     grid-row: 4 / 5;
+    align-self: end;
 }
 
 
@@ -432,32 +472,25 @@ h1, h2 {
 .awards_right_page_img{
     background-image: url('images/awardsImg.jpg');
     background-size: 100% 100%;
-    height: 83vh;
+    height: calc(100vh - 175px);
 }
 
   .awards_left_page::after{
     position: absolute;
     content: '2';
-    top: 92vh;
-    left: 10vh;
-    bottom: 0;
-    right: 0;
+    bottom: 42px;
+    left: 85px;
   }
+
   .awards_right_page::after{
     position: absolute;
     content: '3';
-    top: 92vh;
-    left: 89%;
-    bottom: 0;
-    right: 0;
-    width: 10px;
+    bottom: 42px;
+    right: 85px;
   }
 
 /* ------------------------- */
 
-@media only screen and (min-width: 1440px) and (max-width: 1920px) {
-
-}
 
 @media only screen and (min-width: 1200px) and (max-width: 1439px) {
     .sub_text{
@@ -478,41 +511,14 @@ h1, h2 {
 
     .awards_wrapper{
         gap: 0px 56px;
-    }
 
-    .awards_img{
-        height: 45vh;
-    }
-
-
-    .awards_left_page::after{
-        top: 92vh;
-        left: 6.5vw;
-    }
-
-    .awards_right_page::after{
-        top: 92vh;
-        left: 43vw;
     }
 }
 
 /* Portrait tablets and medium desktops */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .awards_left_page {
-        padding: 40px;
-        height: 100vh;
-    }
-
-    .sign{
-        padding: 15px 41px;
-    }
-
-    .awards_right_page_wrapper{
-        padding: 0px 40px 40px 40px;
-    }
-
-    .awards_right_page_img{
-        height: 89vh;
+        padding: 40px 40px 57px 40px;
     }
 
     .awards_wrapper{
@@ -539,55 +545,71 @@ h1, h2 {
         font-size: 12px;
     }
 
-    .awards_left_page::after{
-        top: 94vh;
-        left: 5vh;
+    .sign{
+        padding: 15px 40px;
     }
 
-    .awards_right_page::after{
-        top: 94vh;
-        left: 45.5vw;
+    .awards_right_page_wrapper{
+        padding: 0px 40px 57px 40px;
+        height: calc(100vh - 68px);
     }
+    
+    .awards_right_page_img{
+        height: 100%;
+    }
+
+    .awards_left_page::after{
+        bottom: 28px;
+        left: 44px;
+      }
+    
+    .awards_right_page::after{
+        bottom: 28px;
+        right: 41px;
+      }
+
 }
 
 /* Portrait tablets and small desktops */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
-    .wrapper{
-        border: none;
-    }
-    .awards_left_page{
-        height: 100vh;
+    .awards_left_page {
+        padding: 81px 81px 81px 81px;
         width: 100%;
-        padding: 81px;
         border: 1px solid black;
-        margin-top: 10px;
+        height: calc(100vh - 7px);
     }
 
     .awards_right_page{
         width: 100%;
-        height: 100vh;
         border: 1px solid black;
         margin-top: 10px;
+    }
+    
+    .awards_right_page_wrapper{
+        padding: 0px 81px 81px 81px;
+        height: calc(100vh - 84px)
+    }
+
+    .awards_right_page_img{
+        height: 100%;
+    }
+
+    .awards_left_page::after{
+        left: 85px;
+        bottom: 42px;
+    }
+
+    .awards_right_page::after{
+        bottom: 42px;
+        right: 85px;
     }
 
     .sign{
         padding: 35px 81px;
     }
 
-    .awards_right_page_wrapper{
-        padding: 0px 81px 81px 81px;
-        height: 100vh;
-    }
-
-    .awards_right_page_img{
-        height: 82vh;
-        background-size: cover;
-    }
-
-    .awards_right_page::after{
-        left: 90%;
-    }
+    
 
 }
 
@@ -683,7 +705,6 @@ h1, h2 {
     }
 }
 
-
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
     .awards_left_page{
@@ -761,6 +782,7 @@ h1, h2 {
     position: relative;
     padding: 81px;
     width: 50%;
+    height: 100%;
 }
 
 .consalt_left_page_wrapper{
@@ -768,14 +790,15 @@ h1, h2 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 34px 26px;
-    height: 80vh;
+    height: 100%;
+    
 }
 
 .consalt_left_page_grid_first{
     background-image: url('images/consaltLeftImg.jpg');
     background-size: cover;
     width: 100%;
-    height: 39vh;
+    height: 100%;
     background-position: center;
 }
 
@@ -784,7 +807,7 @@ h1, h2 {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 40.5vh;
+    height: 100%;
 }
 
 
@@ -818,19 +841,25 @@ h1, h2 {
     border-left: 1px solid black;
 }
 
+.consalt_right_page_box{
+    height: calc(100% - 74px);
+}
+
 
 .consalt_right_page_wrapper{
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 19px;
+    gap: 34px 26px;
+    height: 100%;
 }
 
 .consalt_right_page_grid_second{
     background-image: url('images/dinnerTopImg.jpg');
     background-size: cover;
     width: 100%;
+    height: 100%;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
@@ -849,33 +878,32 @@ h1, h2 {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 41vh;
+    height: 100%;
 }
 
 .consalt_left_page::after{
     position: absolute;
     content: '4';
-    top: 93vh;
-    left: 10vh;
-    bottom: 0;
-    right: 0;
+    left: 85px;
+    bottom: 42px;
     width: 10px;
   }
 
   .consalt_right_page::after{
     position: absolute;
     content: '5';
-    top: 93vh;
-    left: 89%;
-    bottom: 0;
-    right: 0;
+    bottom: 42px;
+    right: 85px;
     width: 10px;
   }
 
-
-@media only screen and (min-width: 1441px) and (max-width: 1536px) {
-    .sub_text{
+@media only screen and (min-width: 1440px) and (max-width: 1640px) {
+    .text{
         font-size: 16px;
+    }
+
+    .sub_text{
+        font-size: 13px;
     }
 }
 
@@ -899,18 +927,6 @@ h1, h2 {
         gap: 42px 10px;
     }
 
-    .consalt_left_page_grid_fourth{
-        height: 40.5vh;
-    }
-
-    .consalt_left_page_grid_first{
-        height: 43vh;
-    }
-
-    .consalt_right_page_grid_third{
-        height: 42vh;
-    }
-
     .button{
         font-size: 13px;
     }
@@ -918,88 +934,66 @@ h1, h2 {
 
 /* Portrait tablets and medium desktops */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .consalt_left_page {
-        height: 100vh;
-        padding: 44px 40px 40px 40px;
-    }
-
-    .consalt_right_page_box{
-        padding: 0px 40px 40px 40px;
-    }
-
-    .consalt_right_page_wrapper{
-        gap: 24px 26px;
-    }
-
-    .subtitle{
-        font-size: 26px;
-        padding-bottom: 9px;
-    }
-
-    .sub_text{
+    .text {
         font-size: 14px;
+    }
+
+    .sub_text {
+        font-size: 13px;
         line-height: 20px;
     }
 
-    .text{
-        font-size: 16px;
-    }
-
-    .button{
+    .button {
         font-size: 13px;
     }
 
-    .consalt_left_page_wrapper{
-        gap: 29px;
+    .consalt_right_page_box{
+        height: calc(100vh - 65px);
+
+        padding: 0px 40px 57px 40px;
     }
 
-    .consalt_left_page_grid_first{
-        height: 45vh;
-    }
-
-    .consalt_right_page_grid_wrap{
-        height: 45vh;
-    }
-
-    .consalt_right_page_grid_third{
-        height: 45.5vh;
-    }
-
-    .consalt_left_page_grid_fourth{
-        height: 44.5vh;
+    .consalt_left_page{
+        padding: 40px 40px 57px 40px;
     }
 
     .consalt_left_page::after{
-        left: 5vh;
-    }
-
-    .consalt_right_page::after{
-        left: 91%;
-    }
+        bottom: 28px;
+        left: 44px;
+      }
+    
+      .consalt_right_page::after{
+        bottom: 28px;
+        right: 41px;
+      }
 }
 
 /* Portrait tablets and small desktops */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .consalt_left_page,
     .consalt_right_page {
-        padding: 81px;
         width: 100%;
-        height: 103vh;
+        border: 1px solid black;
+        margin-top: 10px;
+        height: 100%;
     }
 
     .consalt_left_page{
-        border: 1px solid black;
+        padding: 81px;
+        margin-top: 0;
     }
 
-    .consalt_right_page{
-        border: 1px solid black;
-        margin-top: 10px;
-        padding: 0px;
-        height: 106vh;
+    .consalt_left_page_wrapper{
+        height: calc(100vh - 81px);
     }
+
+    .consalt_right_page_box{
+        height: calc(100% - 81px);
+    }
+
 
     .consalt_right_page_grid_wrap{
-        height: 40vh;
+        height: 100%;
     }
 
 
@@ -1012,19 +1006,16 @@ h1, h2 {
     }
 
     .consalt_right_page_grid_third{
-        height: 43vh;
+        height: 100%;
     }
 
     .consalt_right_page_wrapper{
         gap: 32px 26px;
+        height: calc(100% - 81px);
     }
 
     .subtitle{
         line-height: 30px;
-    }
-
-    .consalt_left_page::after, .consalt_right_page::after{
-        top: 92vh;
     }
 
 }
@@ -1138,11 +1129,13 @@ h1, h2 {
 
 /* -------garnish-------- */
 
+
+
 .garnish_left_page{
     position: relative;
     padding: 81px;
     width: 50%;
-    height: 100vh;
+    height: 100%;
 }
 
 .garnish_left_pagegrid_first{
@@ -1155,11 +1148,13 @@ h1, h2 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 50px;
+
+    height: 100%;
 }
 
 .garnish_left_page_grid_second{
     width: 100%;
-    height: 40vh;
+    height: 100%;
     background-image: url('images/garnishTopImg.jpg');
     background-size: cover;
     background-position: center bottom;
@@ -1175,11 +1170,8 @@ h1, h2 {
 }
 
 .garnish_left_page_grid_third_wrap{
-    position: absolute;
-    left: 0;
-    top: 0;
     width: 100%;
-    height: 40vh;
+    height: 100%;
     background-image: url('images/garnishBottomImg.jpg');
     background-size: cover;
     background-position: center top;
@@ -1191,13 +1183,18 @@ h1, h2 {
     position: relative;
     width: 50%;
     border-left: 1px solid black;
+    height: 100%;
+}
+
+.garnish_right_page_box{
+    height: calc(100% - 74px);
 }
 
 .garnish_right_page_grid_first{
     background-image: url('images/HelpTopImg.jpg');
     background-size: 100% 100%;
     width: 100%;
-    height: 40vh;
+    height: 100%;
     grid-column: 1 / 3;
     grid-row: 1 / 2;
 }
@@ -1206,7 +1203,7 @@ h1, h2 {
     background-image: url('images/helpBottomImg.jpg');
     background-size: 100% 100%;
     width: 100%;
-    height: 40vh;
+    height: 100%;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
 }
@@ -1216,26 +1213,21 @@ h1, h2 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 50px;
+    height: 100%;
 }
 
 .garnish_left_page::after{
     position: absolute;
     content: '6';
-    top: 96vh;
-    left: 4vw;
-    bottom: 0;
-    right: 0;
-    width: 10px;
-  }
+    bottom: 42px;
+    left: 85px;
+}
 
   .garnish_right_page::after{
     position: absolute;
     content: '7';
-    top: 96vh;
-    left: 35.5vw;
-    bottom: 0;
-    right: 0;
-    width: 10px;
+    bottom: 42px;
+    right: 85px;
   }
 
 @media only screen and (min-width: 1200px) and (max-width: 1440px)  {
@@ -1243,68 +1235,58 @@ h1, h2 {
     .garnish_right_page_wrapper, .garnish_left_page_wrapper{
         gap: 27px 12px;
     }
-
-    .garnish_right_page_grid_first{
-        height: 41vh;
-    }
 }
 
 /* Portrait tablets and medium desktops */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .garnish_left_page {
         
-        padding: 44px 40px 40px 40px;
+        padding: 40px 40px 57px 40px;
     }
 
     .garnish_right_page_box{
-        padding: 0px 40px 40px 40px;
+        height: calc(100vh - 65px);
+        padding: 0px 40px 57px 40px;
     }
 
-    .garnish_left_page_wrapper{
-        gap: 30px 26px;
-    }
-
-    .garnish_right_page_wrapper{
+    .garnish_right_page_wrapper, .garnish_left_page_wrapper{
         gap: 28px 14px;
     }
 
-    .garnish_left_page_grid_third{
-        height: 46vh;
+    .garnish_left_page::after{
+        bottom: 28px;
+        left: 44px;
     }
 
-    .garnish_left_page_grid_second, .garnish_right_page_grid_first{
-        height: 46vh;
+    .garnish_right_page::after{
+        bottom: 28px;
+        right: 41px;
     }
-
-    .garnish_left_page_grid_third_wrap, .garnish_right_page_grid_second{
-        height: 45vh;
-    }
-
-    
+;
 }
 
 /* Portrait tablets and small desktops */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .garnish_left_page,
-    .garnish_right_page {
-        padding: 81px;
+    .garnish_left_page {
         width: 100%;
-        height: 103vh;
-    }
-
-    .garnish_left_page{
+        height: 100%;
         border: 1px solid black;
     }
 
     .garnish_right_page{
+        width: 100%;
         border: 1px solid black;
         margin-top: 10px;
-        padding: 0px;
-        height: 106vh;
+        
+        height: 100%;
     }
 
-    .garnish_right_page_grid_first{
-        height: 43vh;
+    .garnish_left_page_wrapper{
+        height: calc(100vh - 81px);
+    }
+
+    .garnish_right_page_box{
+        height: calc(100vh - 74px);
     }
 
 }
@@ -1420,7 +1402,7 @@ h1, h2 {
         background-size: cover;
         background-position: center right;
         width: 100%;
-        height: 100vh;
+        height: 100%;
     }
 
     .mona_lisa{
@@ -1447,14 +1429,14 @@ h1, h2 {
 
 .pastry_right_page_grid_first{
     position: relative;
-    height: 80vh;
+    height: 100%;
 }
 
 .pastry_left_page_wrapper{
     background-image: url('images/pastryLeftImg.jpg');
     background-size: 100% 100%;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 /* -----right-------- */
@@ -1471,7 +1453,7 @@ h1, h2 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
     gap: 30px;
-    height:80vh;
+    height: calc(100% - 74px);
 }
 
 .pastry_right_page_grid_first{
@@ -1483,7 +1465,7 @@ h1, h2 {
     background-image: url('images/lemonImg.jpg');
     background-size: cover;
     width: 100%;
-    height: 80vh;
+    height: 100%;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
@@ -1499,36 +1481,27 @@ h1, h2 {
 .pastry_right_page::after{
     position: absolute;
     content: '11';
-    top: 91vh;
-    left: 35.5vw;
-    bottom: 0;
-    right: 0;
+    bottom: 20px;
+    right: 80px;
+
     width: 10px;
   }
 
 @media only screen and (min-width: 1200px) and (max-width: 1440px)  {
 
-    .garnish_right_page_wrapper, .garnish_left_page_wrapper{
-        gap: 27px 12px;
-    }
-
-    .garnish_right_page_grid_first{
-        height: 41vh;
-    }
+   
 }
 /* Portrait tablets and medium desktops */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
     .pastry_right_page_wrapper{
-        padding: 0px 40px 40px 40px;
+        height: calc(100vh - 65px);
+        padding: 0px 40px 57px 40px;
     }
 
-    .pastry_right_page_grid_first{
-        height: 89vh;
-    }
-
-    .pastry_right_page_grid_second{
-        height: 89vh;
+    .pastry_right_page::after{
+        bottom: 28px;
+        right: 41px; 
     }
     
 }
@@ -1539,16 +1512,29 @@ h1, h2 {
     .pastry_left_page{
         border: 1px solid black;
         width: 100%;
+        height: 100%;
+    }
+
+    .pastry_left_page_wrapper{
+        height: 100%;
+        height: calc(100vh - 14px);
     }
 
     .pastry_right_page{
         width: 100%;
         border: 1px solid black;
         margin-top: 10px;
-        padding: 0px;
-        height: 98vh;
+        height: 100%;
     }
 
+    .pastry_right_page_wrapper{
+        height: calc(100vh - 74px);
+    }
+
+    .pastry_right_page::after{
+        bottom: 42px;
+        right: 85px;
+    }
 }
 
 /* Landscape phones and portrait tablets */
@@ -1622,10 +1608,11 @@ h1, h2 {
 
 footer{
     background-image: url('images/footerImg.jpg');
-    background-size: cover;
+    background-size: auto calc(100% + 5%);
     background-position: center center;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    margin-bottom: 10px !important;
 }
 
 .footer_left_page{
@@ -1747,13 +1734,30 @@ footer{
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .footer_right_page_form{
         position: absolute;
-        transform: translate(20%, 70%);
+        transform: translate(-50%, -40%);
+    }
+
+    .footer_right_page{
+        width: 100%;
+        height: calc(100vh - 41px);
+        border: 1px solid black;
+        margin-top: 10px;
     }
 
     footer{
         background-image: url('images/footer_mob.jpg');
         background-position: center;
+        background-size: 100%;
+        border: 1px solid black;
+        height: 100%;
+        width: 100%;
+        margin-top: 10px !important;
     }
+
+    .footer_left_page{
+        display: none;
+    }
+    
 }
 
 /* Landscape phones and portrait tablets */

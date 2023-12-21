@@ -18,53 +18,93 @@
    <header>
         <div class="wrapper">
             <div class="head_title">
-                <div class="head_title_text">
+                <div class="lang_buttons">
+                    <a href="#" class="button_rus rus_lang">
+                        EN
+                    </a>
+                    <a href="#" class="button_en en_lang">
+                        RU
+                    </a>
+                </div>
+                <div class="head_title_text rus_lang">
                     <h1>NAIRA.</h1>
                     <h1>BRAND PASTRY CHEF</h1>
                     <img src="images/head_signature.jpg" alt="signature">
                     <h2>Создаю искусство в вашем ресторане.</h2>
                 </div>
+                <div class="head_title_text en_lang">
+                    <h1>NAIRA.</h1>
+                    <h1>BRAND PASTRY CHEF</h1>
+                    <img src="images/head_signature.jpg" alt="signature">
+                    <h2>Creating art in your restaurant.</h2>
+                </div>
             </div>
             <div class="head_img_wrapper">
                 <div class="head_img"></div>
+                <button onclick="showMorty(event)" class="btn_huge lake" id="btn_lake" data-visible="false"></button>
             </div>
         </div>
    </header>
    <main>
+    <!-- ghbdtn ghbdtn привет -->
     <section class="wrapper awards">
         <div class="awards_left_page">
             <div class="awards_wrapper">
-                <p class="subtitle subtitle_grid">НАГРАДЫ</p>
-                <div class="award_first">
-                    <div class="awards_text">
+                <p class="subtitle subtitle_grid rus_lang">НАГРАДЫ</p>
+                <!-- <p class="subtitle subtitle_grid en_lang">AWARDS</p> -->
+                <div class="award award_first">
+                    <div class="awards_text rus_lang">
                         <p class="regalia">Финалист</p>
                         <p class="contest">S.PELLEGRINO YOUNG CHEF</p>
                         <p class="year">2019</p>
                     </div>
+                    <!-- <div class="awards_text en_lang">
+                        <p class="regalia">Finalist</p>
+                        <p class="contest">S.PELLEGRINO YOUNG CHEF</p>
+                        <p class="year">2019</p>
+                    </div> -->
                 </div>
-                <div class="award_second">
-                    <div class="awards_text">
+                <div class="award award_second">
+                    <div class="awards_text rus_lang">
                         <p class="regalia">Лучший шеф-кондитер</p>
                         <p class="regalia">России</p>
                         <p class="contest">ПАЛЬМОВАЯ ВЕТВЬ</p>
                         <p class="year">2022</p>
                     </div>
+                    <!-- <div class="awards_text en_lang">
+                        <p class="regalia">Best Pastry Chef</p>
+                        <p class="regalia">in Russia</p>
+                        <p class="contest">Palm Branch Award</p>
+                        <p class="year">2022</p>
+                    </div> -->
                 </div>
-                <div class="award_third">
-                    <div class="awards_text">
+                <div class="award award_third">
+                    <div class="awards_text rus_lang">
                         <p class="regalia">Лучший шеф-кондитер</p>
                         <p class="regalia">Санкт-Петербурга</p>
                         <p class="contest">HORECA UP</p>
                         <p class="year">2019</p>
                     </div>
+                    <!-- <div class="awards_text en_lang">
+                        <p class="regalia">Best Pastry Chef</p>
+                        <p class="regalia"> in St. Petersburg</p>
+                        <p class="contest">HORECA UP</p>
+                        <p class="year">2019</p>
+                    </div> -->
                 </div>
-                <div class="award_fourth">
+                <div class="award award_fourth rus_lang">
                     <div class="awards_text">
                         <p class="regalia">Топ-3 лучших</p>
                         <p class="regalia">шеф-кондитеров России</p>
                         <p class="contest">WHERE TO EAT </p>
                         <p class="year">2022</p>
                     </div>
+                    <!-- <div class="awards_text en_lang">
+                        <p class="regalia">Top 3 Best</p>
+                        <p class="regalia">Chefs in Russia</p>
+                        <p class="contest">in Russia</p>
+                        <p class="year">2022</p>
+                    </div> -->
                 </div>
                 <div class="awards_img"></div>
             </div>
@@ -197,30 +237,30 @@
             </div>
         </div>
     </section>
-    <footer class="wrapper">
-        <div class="footer_left_page"></div>
-        <div class="footer_right_page">
-            <div class="footer_right_page_form">
-                <p class="text_footer">КОНТАКТЫ</p>
-                <div class="whatsup">
-                    <div class="whatsup_icon"></div>
-                    <a class="text_link_footer" href="#">79110844445</a>
-                </div>
-                <div class="mail">
-                    <div class="mail_icon"></div>
-                    <a class="text_link_footer" href="mailto:nairanairena@gmail.com">nairanairena@gmail.com</a>
-                </div>
-                <div class="register">
-                    <form action="mail.php" method="POST" class="register_form">
-                        <input class="register_name" type="text" name="fio" id="Name:" placeholder="Ваше имя" pattern="[A-Za-zА-Яа-яЁё]+" required/>
-                        <input class="register_surname" id="phone" type="tel" name="phone" minlength="16" placeholder="Ваш телефон" required/>
-                        <input id="register_send" type="submit" value="MEOW" name="senf">
-                    </form>
-                </div>
+   </main>
+   <footer class="wrapper">
+    <div class="footer_left_page"></div>
+    <div class="footer_right_page">
+        <div class="footer_right_page_form">
+            <p class="text_footer">КОНТАКТЫ</p>
+            <div class="whatsup">
+                <div class="whatsup_icon"></div>
+                <a class="text_link_footer" href="#">79110844445</a>
+            </div>
+            <div class="mail">
+                <div class="mail_icon"></div>
+                <a class="text_link_footer" href="mailto:nairanairena@gmail.com">nairanairena@gmail.com</a>
+            </div>
+            <div class="register">
+                <form action="mail.php" method="POST" class="register_form">
+                    <input class="register_name" type="text" name="fio" id="Name:" placeholder="Ваше имя" pattern="[A-Za-zА-Яа-яЁё]+" required/>
+                    <input class="register_surname" id="phone" type="tel" name="phone" minlength="16" placeholder="Ваш телефон" required/>
+                    <input id="register_send" type="submit" value="MEOW" name="senf">
+                </form>
             </div>
         </div>
-    </footer>
-   </main>
+    </div>
+</footer>
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   
