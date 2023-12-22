@@ -314,6 +314,19 @@ button.lake{
 
 @media (max-width: 767px){
 
+    .wrapper{
+        flex-direction: column;
+        height: 100%;
+        border: none;
+    }
+
+    .head_title, .head_img_wrapper{
+        width: 100%;
+        border: 1px solid black;
+        margin-top: 10px;
+        height: calc(100vh - 14px);
+    }
+
     .head_title{
         height: 100vh;
     }
@@ -615,16 +628,15 @@ button.lake{
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-    .awards_left_page{
-        height: 100vh;
+    .awards_left_page {
+        padding: 81px 81px 81px 81px;
         width: 100%;
-        padding: 81px;
         border: 1px solid black;
+        height: calc(100vh - 7px);
     }
 
     .awards_right_page{
         width: 100%;
-        height: 100vh;
         border: 1px solid black;
         margin-top: 10px;
     }
@@ -708,18 +720,17 @@ button.lake{
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
     .awards_left_page{
-        height: 80vh;
+        /* height: 80vh; */
         width: 100%;
-        padding: 20px;
+        padding: 20px 20px 42px 20px;
     }
 
     .awards_right_page{
         width: 100%;
-        height: 80vh; 
     }
 
     .awards_right_page_wrapper{
-        padding: 0px 20px 20px 20px;
+        padding: 0px 20px 42px 20px;
     }
 
     .awards_text {
@@ -732,7 +743,7 @@ button.lake{
     }
 
     .awards_img{
-        height: 34vh;
+        /* height: 34vh; */
     }
 
     .sign{
@@ -740,7 +751,7 @@ button.lake{
     }
 
     .awards_right_page_img{
-        height: 68vh;
+        /* height: 68vh; */
     }
 
     .text{
@@ -762,14 +773,22 @@ button.lake{
         height: 13vh;
     }
 
+    .awards_text::before{
+        left: -15%;
+    }
+
+    .awards_text::after {
+        left: 82%;
+    }
+
     .awards_left_page::after{
-        top: 75vh;
-        left: 8vw;
+        bottom: 15px;
+        left: 26px;
     }
 
     .awards_right_page::after{
-        top: 74vh;
-        left: 88.5vw;
+        bottom: 15px;
+        right: 28px;
     }
 
 }
@@ -988,7 +1007,7 @@ button.lake{
     }
 
     .consalt_right_page_box{
-        height: calc(100% - 81px);
+        height: calc(100vh - 81px);
     }
 
 
@@ -1022,29 +1041,36 @@ button.lake{
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-    .consalt_left_page {
-        padding: 81px;
+    .consalt_left_page,
+    .consalt_right_page {
         width: 100%;
+        border: 1px solid black;
+        margin-top: 10px;
+        height: 100%;
     }
 
     .consalt_left_page{
-        border: 1px solid black;
+        padding: 81px;
+        margin-top: 0;
     }
 
-    .consalt_right_page{
-        border: 1px solid black;
-        margin-top: 10px;
-        padding: 0px;
-        width: 100%;
+    .consalt_left_page_wrapper{
+        height: calc(100vh - 81px);
     }
 
+    .consalt_right_page_box{
+        height: calc(100vh - 55px);
+    }
+
+
+    .consalt_right_page_grid_wrap{
+        height: 100%;
+    }
     .text, .sub_text, .button{
         font-size: 14px;line-height: 18px;
     }
 
-    .consalt_left_page::after, .consalt_right_page::after{
-        top: 91vh;
-    }
+   
 
 }
 
@@ -1062,17 +1088,12 @@ button.lake{
         padding: 6px;
     }
 
-    .consalt_right_page_grid_wrap{
-        height: 35vh;
+    .consalt_right_page_box {
+        height: calc(100vh - 73px);
     }
 
-    .consalt_right_page::after{
-        top: 81vh;
-        left: 84%;
-    }
-
-    .consalt_left_page_grid_fourth{
-        height: 39vh;
+    .consalt_left_page_wrapper {
+        height: calc(100vh - 165px);
     }
 }
 
@@ -1086,15 +1107,17 @@ button.lake{
     }
 
     .consalt_right_page_grid_wrap{
-        height: 30vh;
+        /* height: 30vh; */
     }
 
     .consalt_left_page::after{
-        top: 86vh;
+        left: 51px;
+        bottom: 21px;
     }
 
     .consalt_right_page::after{
-        top: 86vh;
+        bottom: 21px;
+        right: 51px;
     }
 
 
@@ -1118,11 +1141,21 @@ button.lake{
     }
 
     .consalt_left_page{
-        padding: 20px 20px 36px 20px;
+        padding: 20px 20px 42px 20px;
     }
 
     .consalt_right_page_box{
-        padding: 0px 20px 20px 20px;
+        padding: 0px 20px 42px 20px;
+    }
+
+    .consalt_right_page::after{
+        bottom: 15px;
+        right: 28px;
+    }
+
+    .consalt_left_page::after{
+        bottom: 15px;
+        left: 26px;
     }
 
 }
@@ -1294,32 +1327,31 @@ button.lake{
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
     .garnish_left_page {
-        padding: 81px;
         width: 100%;
-    }
-
-    .garnish_left_page{
+        height: 100%;
         border: 1px solid black;
     }
 
     .garnish_right_page{
+        width: 100%;
         border: 1px solid black;
         margin-top: 10px;
-        padding: 0px;
-        width: 100%;
+        
+        height: 100%;
     }
 
-    .garnish_right_page_wrapper{
-        gap: 50px 26px;
+    .garnish_left_page_wrapper{
+        height: calc(100vh - 81px);
     }
+
+    .garnish_right_page_box{
+        height: calc(100vh - 74px);
+    }
+
 
 }
 
 @media (max-width: 663px){
-    .garnish_left_page_wrapper{
-        gap: 50px 26px;
-    }
-    
 }
 
 @media (max-width: 580px){
@@ -1331,8 +1363,14 @@ button.lake{
         padding: 0px 45px 45px 45px;
     }
 
-    .garnish_left_page_grid_third_wrap{
-        height: 43vh;
+    .garnish_left_page::after{
+        bottom: 21px;
+        left: 52px;
+    }
+
+    .garnish_right_page::after{
+        bottom: 21px;
+        right: 52px;
     }
 }
 
@@ -1340,20 +1378,26 @@ button.lake{
 @media (max-width: 480px) {
 
     .garnish_left_page{
-        padding: 20px;
-        height: 95vh;
+        padding: 20px 20px 42px 20px;
+        /* height: 95vh; */
     }
 
     .garnish_right_page_box{
-        padding: 0px 20px 20px 20px;
+        padding: 0px 20px 42px 20px;
     }
 
     .garnish_left_page_wrapper, .garnish_right_page_wrapper{
         gap: 33px 8px;
     }
 
-    .garnish_right_page_grid_second{
-        height: 37vh;
+    .garnish_right_page::after{
+        bottom: 15px;
+        right: 28px;
+    }
+
+    .garnish_left_page::after{
+        bottom: 15px;
+        left: 26px;
     }
 
 
@@ -1481,9 +1525,8 @@ button.lake{
 .pastry_right_page::after{
     position: absolute;
     content: '11';
-    bottom: 20px;
+    bottom: 42px;
     right: 80px;
-
     width: 10px;
   }
 
@@ -1543,22 +1586,25 @@ button.lake{
     .pastry_left_page{
         border: 1px solid black;
         width: 100%;
+        height: 100%;
+    }
+
+    .pastry_left_page_wrapper{
+        height: 100%;
+        height: calc(100vh - 14px);
     }
 
     .pastry_right_page{
+        width: 100%;
         border: 1px solid black;
         margin-top: 10px;
-        padding: 0px;
-        width: 100%;
+        height: 100%;
     }
 
     .pastry_right_page_wrapper{
-        height: 88vh;
+        height: calc(100vh - 74px);
     }
 
-    .pastry_right_page_grid_second{
-        height: 80vh;
-    }
 
 }
 
@@ -1573,14 +1619,19 @@ button.lake{
     .pastry_right_page_wrapper{
         padding: 0px 45px 45px 45px;
     }
+
+    .pastry_right_page::after{
+        bottom: 21px;
+        right: 52px;
+    }
 }
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
 
     .pastry_right_page_wrapper{
-        padding: 0px 20px 20px 20px;
-        height: 92vh;
+        padding: 0px 20px 42px 20px;
+        /* height: 92vh; */
         display: block;
     }
 
@@ -1590,14 +1641,18 @@ button.lake{
     }
 
     .pastry_right_page_grid_first{
-        height: 42vh;
-        padding-bottom: 15px;
+        height: 45%;
     }
 
     .pastry_right_page_grid_second {
         margin-top: 20px;
-        height: 42vh;
         background-position:  center center;
+        height: 52%;
+    }
+
+    .pastry_right_page::after{
+        bottom: 15px;
+        right: 28px;
     }
 
     
@@ -1763,13 +1818,27 @@ footer{
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
 
+    footer{
+        background-image: url('images/footer_mob.jpg');
+        background-position: center;
+        background-size: 100%;
+        border: 1px solid black;
+        height: 100%;
+        width: 100%;
+        margin-top: 10px !important;
+    }
+
+
     .footer_right_page_form{
         position: absolute;
-        transform: translate(-50%, 60%)
+        transform: translate(-50%, -50%)
     }
 
     .footer_right_page{
         width: 100%;
+        height: calc(100vh - 41px);
+        border: 1px solid black;
+        margin-top: 10px;
     }
 
 }
