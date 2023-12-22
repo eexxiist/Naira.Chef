@@ -376,7 +376,6 @@ button.lake{
 .award {
     display: flex;
     flex-direction: row;
-
     align-items: center;
     gap: 60px;
 }
@@ -732,40 +731,85 @@ button.lake{
         padding: 0px 20px 42px 20px;
     }
 
+    .awards_wrapper{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 40px 100px 100px 100px 100px auto;
+        height: 100%;
+    }
+
+    .subtitle_grid{
+        text-align: center;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    
+    .award {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 60px;
+    }
+    
+    .award_first{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .award_second{
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    
+    .award_third{
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    } 
+    .award_fourth{
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+    
+    .awards_img{
+        background-image: url('images/appleImg.jpg');
+        background-size: 100% 100%;
+        width: 100%;
+        height: 85%;
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+        align-self: end;
+    }
+
     .awards_text {
         padding-top: 35px;
         width: 90%;
     }
 
-    .awards_wrapper{
-        gap: 0px 17px;
+    .regalia{
+        font-size: 15px;
     }
+
+    .contest{
+        font-size: 14px;
+    }
+
+    .year{
+        font-size: 14px;
+    }
+
 
     .sign{
         padding: 18px 22px;
     }
 
-    .text{
-        line-height: 19px;
-    }
 
-    .regalia{
-        font-size: 10px;
-        line-height: 14px;
-    }
-
-    .contest{
-        font-size: 8px;
-        padding: 0;
-    }
 
     .awards_text::before, .awards_text::after{
         width: 50%;
-        height: 13vh;
+        height: 15vh;
     }
 
     .awards_text::before{
-        left: -15%;
+        left: 0%;
     }
 
     .awards_text::after {
@@ -1122,6 +1166,12 @@ button.lake{
 
     .subtitle{
         font-size: 24px;
+        padding-bottom: 10px;
+    }
+
+    .text_consalt{
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     .sub_text{
         font-size: 12px;
@@ -1448,7 +1498,7 @@ button.lake{
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
     .mona_lisa{
-        background-image: url('images/monaLizaImg480.jpg');
+        background-image: url('images/monaLizaImg_adapt.jpg');
         background-position: center center;
     }
 }
@@ -1845,5 +1895,9 @@ footer{
 @media (max-width: 480px) {
     footer{
         background-size: 100% 100%;
+    }
+
+    .register_name, .register_surname{
+        width: 90%;
     }
 }
