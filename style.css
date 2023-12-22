@@ -720,7 +720,6 @@ button.lake{
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
     .awards_left_page{
-        /* height: 80vh; */
         width: 100%;
         padding: 20px 20px 42px 20px;
     }
@@ -735,23 +734,15 @@ button.lake{
 
     .awards_text {
         padding-top: 35px;
-        width: 83%;
+        width: 90%;
     }
 
     .awards_wrapper{
-        gap: 0px 23px;
-    }
-
-    .awards_img{
-        /* height: 34vh; */
+        gap: 0px 17px;
     }
 
     .sign{
         padding: 18px 22px;
-    }
-
-    .awards_right_page_img{
-        /* height: 68vh; */
     }
 
     .text{
@@ -1641,13 +1632,13 @@ button.lake{
     }
 
     .pastry_right_page_grid_first{
-        height: 45%;
+        height: 50%;
     }
 
     .pastry_right_page_grid_second {
         margin-top: 20px;
         background-position:  center center;
-        height: 52%;
+        height: 47%;
     }
 
     .pastry_right_page::after{
@@ -1852,5 +1843,7 @@ footer{
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
-    
+    footer{
+        background-size: 100% 100%;
+    }
 }
