@@ -15,28 +15,19 @@
 
 </head>
 <body>
-   <header>
+    <header>
         <div class="wrapper">
             <div class="head_title">
                 <div class="lang_buttons">
-                    <a href="#" class="button_rus rus_lang">
+                    <a href="#" class="button_lang change_lang" data-lang="en">
                         EN
-                    </a>
-                    <a href="#" class="button_en en_lang">
-                        RU
                     </a>
                 </div>
                 <div class="head_title_text rus_lang">
                     <h1>NAIRA.</h1>
                     <h1>BRAND PASTRY CHEF</h1>
                     <img src="images/head_signature.jpg" alt="signature">
-                    <h2>Создаю искусство в вашем ресторане.</h2>
-                </div>
-                <div class="head_title_text en_lang">
-                    <h1>NAIRA.</h1>
-                    <h1>BRAND PASTRY CHEF</h1>
-                    <img src="images/head_signature.jpg" alt="signature">
-                    <h2>Creating art in your restaurant.</h2>
+                    <h2 class="lng-greeting" data-lang-key="greeting">Создаю искусство в вашем ресторане.</h2>
                 </div>
             </div>
             <div class="head_img_wrapper">
@@ -44,68 +35,43 @@
                 <button onclick="showMorty(event)" class="btn_huge lake" id="btn_lake" data-visible="false"></button>
             </div>
         </div>
-   </header>
+      </header>
    <main>
     <!-- ghbdtn ghbdtn привет -->
     <section class="wrapper awards">
         <div class="awards_left_page">
             <div class="awards_wrapper">
-                <p class="subtitle subtitle_grid rus_lang">НАГРАДЫ</p>
-                <!-- <p class="subtitle subtitle_grid en_lang">AWARDS</p> -->
+                <p data-lang-key="awards_title" class="subtitle subtitle_grid rus_lang">НАГРАДЫ</p>
                 <div class="award award_first">
                     <div class="awards_text rus_lang">
-                        <p class="regalia">Финалист</p>
-                        <!-- <p class="regalia">конкурса</p> -->
+                        <p data-lang-key="awards_title_text_1" class="regalia">Финалист</p>
                         <p class="contest">S.PELLEGRINO YOUNG CHEF</p>
                         <p class="year">2019</p>
                     </div>
-                    <!-- <div class="awards_text en_lang">
-                        <p class="regalia">Finalist</p>
-                        <p class="contest">S.PELLEGRINO YOUNG CHEF</p>
-                        <p class="year">2019</p>
-                    </div> -->
                 </div>
                 <div class="award award_second">
                     <div class="awards_text rus_lang">
-                        <p class="regalia">Лучший шеф-кондитер</p>
-                        <p class="regalia">России</p>
-                        <p class="contest">ПАЛЬМОВАЯ ВЕТВЬ</p>
+                        <p data-lang-key="awards_title_text_2" class="regalia">Лучший шеф-кондитер</p>
+                        <p data-lang-key="awards_title_text_3" class="regalia">России</p>
+                        <p data-lang-key="awards_title_text_4" class="contest">ПАЛЬМОВАЯ ВЕТВЬ</p>
                         <p class="year">2022</p>
                     </div>
-                    <!-- <div class="awards_text en_lang">
-                        <p class="regalia">Best Pastry Chef</p>
-                        <p class="regalia">in Russia</p>
-                        <p class="contest">Palm Branch Award</p>
-                        <p class="year">2022</p>
-                    </div> -->
                 </div>
                 <div class="award award_third">
                     <div class="awards_text rus_lang">
-                        <p class="regalia">Лучший шеф-кондитер</p>
-                        <p class="regalia">Санкт-Петербурга</p>
+                        <p data-lang-key="awards_title_text_5" class="regalia">Лучший шеф-кондитер</p>
+                        <p data-lang-key="awards_title_text_6" class="regalia">Санкт-Петербурга</p>
                         <p class="contest">HORECA UP</p>
                         <p class="year">2019</p>
                     </div>
-                    <!-- <div class="awards_text en_lang">
-                        <p class="regalia">Best Pastry Chef</p>
-                        <p class="regalia"> in St. Petersburg</p>
-                        <p class="contest">HORECA UP</p>
-                        <p class="year">2019</p>
-                    </div> -->
                 </div>
                 <div class="award award_fourth rus_lang">
                     <div class="awards_text">
-                        <p class="regalia">Топ-3 лучших</p>
-                        <p class="regalia">шеф-кондитеров России</p>
+                        <p data-lang-key="awards_title_text_7" class="regalia">Топ-3 лучших</p>
+                        <p data-lang-key="awards_title_text_8" class="regalia">шеф-кондитеров России</p>
                         <p class="contest">WHERE TO EAT </p>
                         <p class="year">2022</p>
                     </div>
-                    <!-- <div class="awards_text en_lang">
-                        <p class="regalia">Top 3 Best</p>
-                        <p class="regalia">Chefs in Russia</p>
-                        <p class="contest">in Russia</p>
-                        <p class="year">2022</p>
-                    </div> -->
                 </div>
                 <div class="awards_img"></div>
             </div>
@@ -122,8 +88,8 @@
             <div class="consalt_left_page_wrapper">
                 <div class="consalt_left_page_grid_first"></div>
                 <div class="consalt_left_page_grid_second">
-                    <p class="subtitle">КОНСАЛТИНГ</p>
-                    <p class="text">Уникальные десерты для вашего ресторана.</p>
+                    <p data-lang-key="greeting" class="subtitle">КОНСАЛТИНГ</p>
+                    <p data-lang-key="greeting" class="text">Уникальные десерты для вашего ресторана.</p>
                     <p class="text">Качественно, быстро и профессионально.</p>
                     <ul style="padding-top: 15px;">
                         <li class="sub_text">десерты основного меню;</li>

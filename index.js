@@ -15,23 +15,37 @@ function showMorty(e){
 
 
 
-// const en_btn = document.getElementsByClassName('en_lang')
-// const ru_btn = document.getElementsByClassName('rus_lang')
+// your-script.js
+document.addEventListener("DOMContentLoaded", function () {
+  const buttonLang = document.querySelector('.change_lang');
 
-// ru_btn[0].addEventListener('click', () => {
-//     console.log('Была нажата кнопка переключения на английский')
-//     for(let i = 0; i < ru_btn.length; i++){
-//         ru_btn[i].style.position = 'absolute'
-//         ru_btn[i].style.left = '-1000px'
-//         en_btn[i].style.position = 'static'
-//     }
-// }) 
+  buttonLang.addEventListener('click', changeURLLanguage);
 
-// en_btn[0].addEventListener('click', () => {
-//     console.log('Была нажата кнопка переключения на русский')
-//     for(let i = 0; i < ru_btn.length; i++){
-//         en_btn[i].style.position = 'absolute'
-//         en_btn[i].style.left = '-1000px'
-//         ru_btn[i].style.position = 'static'
-//     }
-// })
+  function changeURLLanguage() {
+    const currentLang = buttonLang.getAttribute('data-lang');
+    const newLang = currentLang === 'ru' ? 'en' : 'ru';
+
+    // Update the language attribute for the button
+    buttonLang.setAttribute('data-lang', newLang);
+    // Update text content for each element
+    updateLanguage(newLang);
+    // Update the text on the button
+    buttonLang.textContent = newLang.toUpperCase();
+  }
+
+  function updateLanguage(lang) {
+    fetch('translations.json')
+      .then(response => response.json())
+      .then(translations => {
+        Object.keys(translations).forEach(key => {
+          const element = document.querySelector(`[data-lang-key="${key}"]`);
+          if (element) {
+            element.textContent = translations[key][lang];
+          }
+        });
+      })
+      .catch(error => console.error('Error fetching translations:', error));
+  }
+});
+
+

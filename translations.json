@@ -1,0 +1,51 @@
+{
+  "greeting": {
+    "ru": "Создаю искусство в вашем ресторане.",
+    "en": "Creating art in your restaurant."
+  },
+  "hello": {
+    "ru": "привет",
+    "en": "руддщ"
+  },
+  "how_are_you": {
+    "ru": "как дела?",
+    "en": "how are you?"
+  },
+  "awards_title": {
+    "ru": "НАГРАДЫ",
+    "en": "AWARDS"
+  },
+  "awards_title_text_1": {
+    "ru": "Финалист",
+    "en": "Finalist"
+  },
+  "awards_title_text_2": {
+    "ru": "Лучший шеф-кондитер",
+    "en": "Best Pastry Chef"
+  },
+  "awards_title_text_3": {
+    "ru": "России",
+    "en": "in Russia"
+  },
+  "awards_title_text_4": {
+    "ru": "ПАЛЬМОВАЯ ВЕТВЬ",
+    "en": "Palm Branch Award"
+  },
+  "awards_title_text_5": {
+    "ru": "Лучший шеф-кондитер",
+    "en": "Best Pastry Chef"
+  },
+  "awards_title_text_6": {
+    "ru": "Санкт-Петербурга",
+    "en": "in St. Petersburg"
+  },
+  "awards_title_text_7": {
+    "ru": "Топ-3 лучших",
+    "en": "Top 3 Best"
+  },
+  "awards_title_text_8": {
+    "ru": "шеф-кондитеров России",
+    "en": "Chefs in Russia"
+  }
+}
+  
