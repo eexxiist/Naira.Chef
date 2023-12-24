@@ -134,10 +134,10 @@ main{
     font-family: 'Playfair Display';
     font-size: 28px;
     font-weight: 400;
-    line-height: 37px;
+    line-height: 30px;
     letter-spacing: 0em;
     text-align: left;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 
@@ -410,14 +410,14 @@ button.lake{
     text-align: center;
     position: relative;
     margin: 0 auto;
-    width: 65%;
+    width: 70%;
 }
 
 .awards_text::before{
     position: absolute;
     content: '';
     top: 0;
-    left: -40%;
+    left: -30%;
     right: 0;
     bottom: 0;
     width: 100%;
@@ -476,7 +476,7 @@ button.lake{
 
 .awards_right_page_img{
     background-image: url('images/awardsImg.jpg');
-    background-size: 100% 100%;
+    background-size: cover;
     height: calc(100vh - 175px);
 }
 
@@ -503,11 +503,11 @@ button.lake{
     }
 
     .awards_text{
-        width: 90%;
+        width: 100%;
     }
 
     .awards_text::before{
-        left: -26%;
+        left: -20%;
     }
 
     .awards_text::after{
@@ -531,11 +531,11 @@ button.lake{
     }
 
     .awards_text{
-        width: 70%;
+        width: 80%;
     }
 
     .awards_text::before{
-        left: -35%;
+        left: -25%;
     }
     .awards_text::after{
         left: 92%;
@@ -614,7 +614,13 @@ button.lake{
         padding: 35px 81px;
     }
 
-    
+    .awards_text{
+        width: 80%;
+    }
+
+    .awards_text::before{
+        left: -20%;
+    }
 
 }
 
@@ -637,15 +643,15 @@ button.lake{
         width: 80%;
     }
 
+    .awards_wrapper{
+        gap: 0px 39px;
+    }
+
     .awards_text::before{
         left: -25%;
     }
     .awards_text::after{
         left: 89%;
-    }
-
-    .awards_right_page::after{
-        left: 88%;
     }
 
     
@@ -667,10 +673,6 @@ button.lake{
     .year{
         font-size: 12px;
     }
-
-    .awards_right_page::after{
-        left: 86%;
-    }
 }
 
 @media (max-width: 580px){
@@ -690,38 +692,8 @@ button.lake{
         gap: 11px 30px;
     }
 
-    .awards_img{
-        height: 48vh;
-    }
-
     .awards_right_page_img{
-        height: 89vh;
-    }
-
-    .awards_left_page::after{
-        top: 95vh;
-        left: 5.5vh;
-    }
-
-    .awards_right_page::after{
-        top: 95vh;
-        left: 91%;
-    }
-}
-
-/* Landscape phones and smaller */
-@media (max-width: 480px) {
-    .awards_left_page{
-        width: 100%;
-        padding: 20px 20px 48px 20px;
-    }
-
-    .awards_right_page{
-        width: 100%;
-    }
-
-    .awards_right_page_wrapper{
-        padding: 0px 20px 42px 20px;
+       height: calc(100vh - 50px);
     }
 
     .awards_wrapper{
@@ -761,7 +733,7 @@ button.lake{
         grid-column: 1 / 2;
         grid-row: 5 / 6;
     }
-    
+
     .awards_img{
         background-image: url('images/appleImg.jpg');
         background-size: 100% 100%;
@@ -772,9 +744,57 @@ button.lake{
         align-self: end;
     }
 
+    .regalia {
+        font-size: 15px;
+    }
+
+    .contest, year{
+        font-size: 14px;
+    }
+
+    .awards_text::before {
+        left: 0%;
+    }
+
+    .awards_text::after {
+        left: 80%;
+    }
+
+
+    .awards_left_page::after{
+        bottom: 15px;
+        left: 50px;
+    }
+
+    .awards_right_page::after{
+        bottom: 15px;
+        right: 50px;
+    }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+    .awards_left_page{
+        width: 100%;
+        padding: 20px 20px 42px 20px;
+        height: calc(100vh - 0px);
+    }
+
+    .awards_right_page{
+        width: 100%;
+    }
+
+    .awards_right_page_wrapper{
+        padding: 0px 20px 42px 20px;
+    }
+
+    .awards_right_page_img{
+        background-image: url('images/awardsImg480.jpg');
+    }
+
     .awards_text {
         padding-top: 35px;
-        width: 90%;
+        width: 80%;
     }
 
     .regalia{
@@ -798,15 +818,16 @@ button.lake{
 
     .awards_text::before, .awards_text::after{
         width: 50%;
-        height: 15vh;
+        height: 16vh;
     }
 
     .awards_text::before{
-        left: 0%;
+        left: -2%;
+        top: 3%;
     }
 
     .awards_text::after {
-        left: 82%;
+        left: 80%;
     }
 
     .awards_left_page::after{
@@ -873,7 +894,7 @@ button.lake{
 
 .sub_text{
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 25px;
     text-align: left;
@@ -947,6 +968,7 @@ button.lake{
 @media only screen and (min-width: 1440px) and (max-width: 1640px) {
     .text{
         font-size: 16px;
+        line-height: 20px;
     }
 
     .sub_text{
@@ -959,6 +981,7 @@ button.lake{
 
     .text{
         font-size: 14px;
+        line-height: 20px;
     }
 
     .sub_text{
@@ -971,7 +994,7 @@ button.lake{
     }
 
     .consalt_left_page_wrapper{
-        gap: 42px 10px;
+        gap: 56px 10px;
     }
 
     .button{
@@ -1034,9 +1057,9 @@ button.lake{
         height: calc(100vh - 81px);
     }
 
-    .consalt_right_page_box{
+    /* .consalt_right_page_box{
         height: calc(100vh - 81px);
-    }
+    } */
 
 
     .consalt_right_page_grid_wrap{
@@ -1063,6 +1086,15 @@ button.lake{
 
     .subtitle{
         line-height: 30px;
+    }
+
+    .text{
+        font-size: 16px;
+    }
+
+    .sub_text{
+        font-size: 14px;
+        line-height: 22px;
     }
 
 }
@@ -1214,8 +1246,7 @@ button.lake{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 50px;
-
+    gap: 50px 50px;
     height: 100%;
 }
 
@@ -1268,7 +1299,8 @@ button.lake{
 
 .garnish_right_page_grid_second{
     background-image: url('images/helpBottomImg.jpg');
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position:  center center;
     width: 100%;
     height: 100%;
     grid-column: 1 / 2;
@@ -1279,7 +1311,7 @@ button.lake{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 50px;
+    gap: 50px 50px;
     height: 100%;
 }
 
@@ -1376,6 +1408,7 @@ button.lake{
 
     .garnish_left_page_wrapper{
         height: calc(100vh - 81px);
+        gap: 50px 20px;
     }
 
     .garnish_right_page_box{
@@ -1395,6 +1428,10 @@ button.lake{
 
     .garnish_right_page_box{
         padding: 0px 45px 45px 45px;
+    }
+
+    .garnish_right_page_wrapper{
+        gap: 50px 19px;
     }
 
     .garnish_left_page::after{
@@ -1856,7 +1893,7 @@ footer{
     footer{
         background-image: url('images/footer_mob.jpg');
         background-position: center;
-        background-size: 100%;
+        background-size: cover;
         border: 1px solid black;
         height: 100%;
         width: 100%;
