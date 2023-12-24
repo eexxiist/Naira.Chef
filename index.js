@@ -15,7 +15,6 @@ function showMorty(e){
 
 
 
-// your-script.js
 document.addEventListener("DOMContentLoaded", function () {
   const buttonLang = document.querySelector('.change_lang');
 

@@ -3,14 +3,6 @@
     "ru": "Создаю искусство в вашем ресторане.",
     "en": "Creating art in your restaurant."
   },
-  "hello": {
-    "ru": "привет",
-    "en": "руддщ"
-  },
-  "how_are_you": {
-    "ru": "как дела?",
-    "en": "how are you?"
-  },
   "awards_title": {
     "ru": "НАГРАДЫ",
     "en": "AWARDS"
@@ -46,6 +38,175 @@
   "awards_title_text_8": {
     "ru": "шеф-кондитеров России",
     "en": "Chefs in Russia"
+  },
+  "consalt_title_text_1": {
+    "ru": "КОНСАЛТИНГ",
+    "en": "CONSULTING"
+  },
+  "consalt_title_text_2": {
+    "ru": "Уникальные десерты для вашего ресторана.",
+    "en": "Unique desserts for your restaurant."
+  },
+  "consalt_title_text_3": {
+    "ru": "Качественно, быстро и профессионально.",
+    "en": "High-quality, fast, and professional service."
+  },
+  "consalt_title_text_4": {
+    "ru": "десерты основного меню;",
+    "en": "main menu desserts;"
+  },
+  "consalt_title_text_5": {
+    "ru": "коллаборационные десерты;",
+    "en": "Collaborative desserts;"
+  },
+  "consalt_title_text_6": {
+    "ru": "спешл-десерты на праздники;",
+    "en": "special desserts for holidays;"
+  },
+  "consalt_title_text_7": {
+    "ru": "А также:",
+    "en": "Additionally:"
+  },
+  "consalt_title_text_8": {
+    "ru": "помощь на этапе строительства.",
+    "en": "assistance during the construction phase."
+  },
+  "consalt_title_text_9": {
+    "ru": "разработка концептуальных десертов под ваш проект;",
+    "en": "development of conceptual desserts for your project;"
+  },
+  "consalt_title_text_10": {
+    "ru": "формирование корректных технологических карт;",
+    "en": "creation of accurate technological cards;"
+  },
+  "consalt_title_text_11": {
+    "ru": "обучение сотрудников;",
+    "en": "staff training;"
+  },
+  "consalt_title_text_12": {
+    "ru": "презентационные материалы для сервиса;",
+    "en": "presentation materials for service;"
+  },
+  "consalt_title_text_13": {
+    "ru": "курирование после запуска десертов.",
+    "en": "supervision after the launch of desserts."
+  },
+  "consalt_button_text_14": {
+    "ru": "ЗАПРОСИТЬ ПРАЙС НА УСЛУГИ",
+    "en": "TO REQUEST A PRICE FOR SERVICES"
+  },
+  "dinner_title_text_1": {
+    "ru": "МЕРОПРИЯТИЯ И УЖИНЫ",
+    "en": "EVENTS AND DINNERS"
+  },
+  "dinner_title_text_2": {
+    "ru": "Изготовление VIP-заказов:",
+    "en": "Production of VIP orders:"
+  },
+  "dinner_title_text_3": {
+    "ru": "шоколадных сувениров;",
+    "en": "chocolate souvenirs;"
+  },
+  "dinner_title_text_4": {
+    "ru": "корпоративных изделий;",
+    "en": "corporate items;"
+  },
+  "dinner_title_text_5": {
+    "ru": "тортов;",
+    "en": "cakes;"
+  },
+  "dinner_title_text_6": {
+    "ru": "фуршетных десертов.",
+    "en": "buffet desserts."
+  },
+  "dinner_title_text_7": {
+    "ru": "Участие в ужинах:",
+    "en": "Participation in dinners:"
+  },
+  "dinner_title_text_8": {
+    "ru": "пре-десерт, основной десерт и финиш-десерт, с обучением сотрудников.",
+    "en": "pre-dessert, main dessert, and finish dessert, with staff training."
+  },
+  "garnish_title_text_1": {
+    "ru": "РАЗРАБОТКА ГАРНИШЕЙ",
+    "en": "DEVELOPMENT OF GARNISHES"
+  },
+  "garnish_title_text_2": {
+    "ru": "Помощь бартендерам в создании съедобного дополнения к коктейлям и напиткам.",
+    "en": "Assisting bartenders in creating edible complements to cocktails and drinks. "
+  },
+  "garnish_title_text_3": {
+    "ru": "Отличный способ раскрыть концепцию и подчеркнуть вкусовые качества.",
+    "en": "An excellent way to enhance the concept and highlight flavor qualities."
+  },
+  "garnish_title_text_4": {
+    "ru": "УЗНАТЬ ПОДРОБНЕЕ",
+    "en": "LEARN MORE"
+  },
+  "garnish_title_text_5": {
+    "ru": "ПОМОЩЬ В ВОПЛОЩЕНИИ ВАШИХ ИДЕЙ",
+    "en": "ASSISTANCE IN BRINGING YOUR IDEAS TO LIFE"
+  },
+  "garnish_title_text_6": {
+    "ru": "частные мастер-классы;",
+    "en": "private masterclasses;"
+  },
+  "garnish_title_text_7": {
+    "ru": "обучение с целью реализации задуманного десерта;",
+    "en": "training for the implementation of envisioned desserts;"
+  },
+  "garnish_title_text_8": {
+    "ru": "повышение квалификации.",
+    "en": "skill enhancement."
+  },
+  "pastry_title_text_1": {
+    "ru": "Курс повышения квалификации для кондитеров и шеф-кондитеров, дающий возможность:",
+    "en": "A professional development course for pastry chefs and head pastry chefs, providing the opportunity to:"
+  },
+  "pastry_title_text_2": {
+    "ru": "освоить операционную деятельность;",
+    "en": "master operational activities;"
+  },
+  "pastry_title_text_3": {
+    "ru": "научиться разрабатывать и реализовывать десерты в соответсвии с концепцией;",
+    "en": "learn to develop and implement desserts according to a concept;"
+  },
+  "pastry_title_text_4": {
+    "ru": "расширить границы возможного в профессиональной сфере;",
+    "en": "expand the boundaries of what's possible in the professional sphere;"
+  },
+  "pastry_title_text_5": {
+    "ru": "познать систему работы на консалтинговой основе и опробовать её;",
+    "en": "understand the consulting-based work system and experience it;"
+  },
+  "pastry_title_text_6": {
+    "ru": "собрать портфолио и полный документооборот;",
+    "en": "compile a portfolio and complete documentation;"
+  },
+  "pastry_title_text_7": {
+    "ru": "продвинуться по карьерной лестнице;",
+    "en": "advance in your career;"
+  },
+  "pastry_title_text_8": {
+    "ru": "собрать рецептурную базу;",
+    "en": "build a recipe database;"
+  },
+  "pastry_title_text_9": {
+    "ru": "прокачать свой бренд;",
+    "en": "enhance your brand;"
+  },
+  "pastry_title_text_10": {
+    "ru": "и многое другое",
+    "en": "and much more."
+  },
+  "pastry_title_text_11": {
+    "ru": "УЗНАТЬ ПОДРОБНЕЕ",
+    "en": "LEARN MORE"
+  },
+  "contact_title_text_1": {
+    "ru": "КОНТАКТЫ",
+    "en": "CONTACTS"
   }
+
 }
   

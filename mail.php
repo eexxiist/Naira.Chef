@@ -17,13 +17,12 @@
         echo 'Вы не заполнили Телефон';
     }
    
-    if (mail("nairanairena@gmail.com", "Заявка с сайта PR4VISA.RU", "ФИО:".$fio. "\nТелефон: ".$number ,"From: sales@pr4visa.ru \r\n"))
+    if (mail("nairanairena@gmail.com", "Заявка с сайта", "ФИО:".$fio. "\nТелефон: ".$number ,"From: nairena_mail_site@nairena.ru  \r\n"))
     {     echo "";
     } else {
         echo "при отправке сообщения возникли ошибки";
     }
 
     ini_set('short_open_tag', 'On');
-    // header('Refresh: 3; URL=index.html');
 
 ?>
