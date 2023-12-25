@@ -46,7 +46,7 @@
                 <p data-lang-key="awards_title" class="subtitle subtitle_grid rus_lang">НАГРАДЫ</p>
                 <div class="award award_first">
                     <div class="awards_text rus_lang">
-                        <p data-lang-key="awards_title_text_1" class="regalia">Финалист</p>
+                        <p data-lang-key="awards_title_text_1" class="regalia regalia_line">Финалист</p>
                         <p class="contest">S.PELLEGRINO YOUNG CHEF</p>
                         <p class="year">2019</p>
                     </div>
@@ -222,8 +222,8 @@
             </div>
             <div class="register">
                 <form action="mail.php" method="POST" class="register_form">
-                    <input class="register_name" type="text" name="fio" id="Name:" placeholder="Ваше имя" pattern="[A-Za-zА-Яа-яЁё]+" required/>
-                    <input class="register_surname" id="phone" type="tel" name="phone" minlength="16" placeholder="Ваш телефон" required/>
+                    <input data-lang-key="name_placeholder" class="register_name" type="text" name="fio" id="name" placeholder="Ваше имя" pattern="[A-Za-zА-Яа-яЁё ]+" required/>
+                    <input data-lang-key="phone_placeholder" class="register_surname" id="phone" type="tel" name="phone" minlength="16" placeholder="Ваш телефон" required/>
                     <input id="register_send" type="submit" value="MEOW" name="senf">
                 </form>
             </div>

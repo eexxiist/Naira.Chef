@@ -102,7 +102,7 @@ select {
 /* ----------------ALL----------------- */
 
 header, footer{
-   margin-top: 10px !important;
+   /* margin-top: 10px !important; */
 }
 
 header .wrapper{
@@ -299,7 +299,7 @@ button.lake{
     }
 
     .head_title{
-        height: 100vh;
+        height: calc(100vh - 20px);
     }
 }
 
@@ -448,6 +448,10 @@ button.lake{
     text-align: center;
 }
 
+.regalia_line{
+    line-height: 40px;
+}
+
 .contest{
     padding-top: 10px;
     font-family: 'Open Sans', sans-serif;
@@ -472,12 +476,17 @@ button.lake{
     position: relative;
     border-left: 1px solid black;
     width: 50%;
+    height: 100%;
+}
+
+.awards_right_page_wrapper{
+    height: calc(100vh - 93px);
 }
 
 .awards_right_page_img{
     background-image: url('images/awardsImg.jpg');
     background-size: cover;
-    height: calc(100vh - 175px);
+    height: 100%;
 }
 
   .awards_left_page::after{
@@ -582,18 +591,19 @@ button.lake{
         padding: 81px 81px 81px 81px;
         width: 100%;
         border: 1px solid black;
-        height: calc(100vh - 7px);
+        height: calc(100vh - 20px);
     }
 
     .awards_right_page{
         width: 100%;
         border: 1px solid black;
         margin-top: 10px;
+        height: calc(100vh - 9px);
     }
     
     .awards_right_page_wrapper{
         padding: 0px 81px 81px 81px;
-        height: calc(100vh - 84px)
+        height: calc(100vh - 84px);
     }
 
     .awards_right_page_img{
@@ -651,7 +661,7 @@ button.lake{
         left: -25%;
     }
     .awards_text::after{
-        left: 89%;
+        left: 95%;
     }
 
     
@@ -693,7 +703,7 @@ button.lake{
     }
 
     .awards_right_page_img{
-       height: calc(100vh - 50px);
+       height: 100%;
     }
 
     .awards_wrapper{
@@ -818,7 +828,7 @@ button.lake{
 
     .awards_text::before, .awards_text::after{
         width: 50%;
-        height: 16vh;
+        height: 18vh;
     }
 
     .awards_text::before{
@@ -1045,7 +1055,7 @@ button.lake{
         width: 100%;
         border: 1px solid black;
         margin-top: 10px;
-        height: 100%;
+        height: calc(100vh - 20px);
     }
 
     .consalt_left_page{
@@ -1054,12 +1064,8 @@ button.lake{
     }
 
     .consalt_left_page_wrapper{
-        height: calc(100vh - 81px);
+        height: 100%;
     }
-
-    /* .consalt_right_page_box{
-        height: calc(100vh - 81px);
-    } */
 
 
     .consalt_right_page_grid_wrap{
@@ -1081,7 +1087,7 @@ button.lake{
 
     .consalt_right_page_wrapper{
         gap: 32px 26px;
-        height: calc(100vh - 152px);
+        height: 100%;
     }
 
     .subtitle{
@@ -1368,7 +1374,7 @@ button.lake{
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .garnish_left_page {
         width: 100%;
-        height: 100%;
+        height: calc(100vh - 20px);
         border: 1px solid black;
     }
 
@@ -1377,15 +1383,15 @@ button.lake{
         border: 1px solid black;
         margin-top: 10px;
         
-        height: 100%;
+        height: calc(100vh - 20px);
     }
 
     .garnish_left_page_wrapper{
-        height: calc(100vh - 81px);
+        height: 100%;
     }
 
     .garnish_right_page_box{
-        height: calc(100vh - 74px);
+        height: calc(100vh - 84px);
     }
 
 }
@@ -1482,7 +1488,7 @@ button.lake{
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 20px);
 }
 
 .mona_lisa_left_page{
@@ -1517,7 +1523,7 @@ button.lake{
         background-size: cover;
         background-position: center right;
         width: 100%;
-        height: 100%;
+        height: calc(100vh - 20px);
     }
 
     .mona_lisa{
@@ -1597,7 +1603,7 @@ button.lake{
     position: absolute;
     content: '11';
     bottom: 42px;
-    right: 80px;
+    right: 85px;
     width: 10px;
   }
 
@@ -1631,18 +1637,18 @@ button.lake{
 
     .pastry_left_page_wrapper{
         height: 100%;
-        height: calc(100vh - 14px);
+        height: calc(100vh - 20px);
     }
 
     .pastry_right_page{
         width: 100%;
         border: 1px solid black;
         margin-top: 10px;
-        height: 100%;
+        height: calc(100vh - 20px);
     }
 
     .pastry_right_page_wrapper{
-        height: calc(100vh - 74px);
+        height: calc(100% - 84px);
     }
 
     .pastry_right_page::after{
@@ -1689,21 +1695,12 @@ button.lake{
 
     .pastry_right_page_wrapper{
         padding: 0px 45px 45px 45px;
+        display: block;
     }
 
     .pastry_right_page::after{
         bottom: 21px;
         right: 52px;
-    }
-}
-
-/* Landscape phones and smaller */
-@media (max-width: 480px) {
-
-    .pastry_right_page_wrapper{
-        padding: 0px 20px 42px 20px;
-        /* height: 92vh; */
-        display: block;
     }
 
     .button_pastry{
@@ -1719,6 +1716,15 @@ button.lake{
         margin-top: 20px;
         background-position:  center center;
         height: 47%;
+    }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+
+    .pastry_right_page_wrapper{
+        padding: 0px 20px 42px 20px;
+        display: block;
     }
 
     .pastry_right_page::after{
@@ -1866,15 +1872,15 @@ footer{
 
     .footer_right_page{
         width: 100%;
-        height: calc(100vh - 41px);
+        height: calc(100vh - 20px);
         border: 1px solid black;
-        margin-top: 10px;
+        /* margin-top: 10px; */
     }
 
     footer{
         background-image: url('images/footer_mob.jpg');
         background-position: center;
-        background-size: 100%;
+        background-size: cover;
         border: 1px solid black;
         height: 100%;
         width: 100%;

@@ -206,6 +206,14 @@
   "contact_title_text_1": {
     "ru": "КОНТАКТЫ",
     "en": "CONTACTS"
+  }, 
+  "name_placeholder": {
+    "ru": "Ваше имя",
+    "en": "Your name"
+  }, 
+  "phone_placeholder": {
+    "ru": "Ваш телефон",
+    "en": "Your number"
   }
 
 }

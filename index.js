@@ -29,7 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Update text content for each element
     updateLanguage(newLang);
     // Update the text on the button
-    buttonLang.textContent = newLang.toUpperCase();
+    buttonLang.textContent = currentLang.toUpperCase();
+
   }
 
   function updateLanguage(lang) {
@@ -39,7 +40,11 @@ document.addEventListener("DOMContentLoaded", function () {
         Object.keys(translations).forEach(key => {
           const element = document.querySelector(`[data-lang-key="${key}"]`);
           if (element) {
-            element.textContent = translations[key][lang];
+            if(element.tagName === 'INPUT' && element.getAttribute('placeholder')){
+              element.setAttribute('placeholder', translations[key][lang])
+            }else{
+              element.textContent = translations[key][lang];
+            }
           }
         });
       })
