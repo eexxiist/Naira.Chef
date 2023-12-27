@@ -6,6 +6,10 @@ function showMorty(e){
         var randomParam = '?t=' + new Date().getTime();
 
         e.target.style.backgroundImage = 'url(https://media1.tenor.com/m/-9ObxBks2acAAAAd/%D1%80%D0%B8%D0%BA-%D1%80%D0%B8%D0%BA-%D0%B8-%D0%BC%D0%BE%D1%80%D1%82%D0%B8.gif' + randomParam + ')';
+        setTimeout(function () {
+          e.target.style.backgroundImage = 'none';
+          e.target.setAttribute('data-visible', 'false');
+      }, 5000);
     }else{
         e.target.setAttribute('data-visible', 'false')
 
