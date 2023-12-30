@@ -484,7 +484,7 @@ button.lake{
 }
 
 .awards_right_page_img{
-    background-image: url('images/awardsImg481.jpg');
+    background-image: url('images/awardsImg.WEBP');
     background-size: cover;
     height: 100%;
 }
@@ -824,7 +824,7 @@ button.lake{
     }
 
     .awards_right_page_img{
-        background-image: url('images/awardsImg480.jpg');
+        background-image: url('images/awardsImg480.WEBP');
     }
 
     .awards_text {
