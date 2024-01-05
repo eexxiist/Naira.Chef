@@ -1,0 +1,707 @@
+@media only screen and (min-width: 1439px) and (max-width: 1605px){
+    .awards_text::before{
+        left: -10%;
+    } 
+
+    .awards_text::after{
+        left: 90%;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+    .sub_text{
+        font-size: 16px;
+    }
+
+    .awards_text{
+        width: 100%;
+    }
+
+    .awards_text::before{
+        left: -20%;
+        height: 17vh;
+    }
+
+    .awards_text::after{
+        left: 90%;
+        height: 17vh;
+    }
+    
+
+    .awards_wrapper{
+        gap: 9px 72px;
+
+    }
+
+    .contest, .regalia{
+        font-size: 12px;
+
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .head_title_text{
+        width: 70%;
+    }
+
+    .awards_left_page, .consalt_left_page, .garnish_left_page {
+        padding: 40px 40px 57px 40px;
+    }
+
+    .awards_wrapper{
+        gap: 22px 30px;
+    }
+
+    .awards_text{
+        width: 100%;
+    }
+
+    .awards_text::before{
+        left: -6%;
+    }
+
+    .regalia{
+        font-size: 12px;
+    }
+
+    .contest{
+        padding-top: 7px;
+        font-size: 12px;
+    }
+
+    .sign{
+        padding: 15px 40px;
+    }
+
+    .awards_right_page_wrapper{
+        padding: 0px 40px 57px 40px;
+        height: calc(100vh - 68px);
+    }
+    
+    .awards_right_page_img{
+        height: 100%;
+    }
+
+    .awards_left_page::after, .consalt_left_page::after, .garnish_left_page::after{
+        bottom: 28px;
+        left: 44px;
+      }
+    
+    .awards_right_page::after, .consalt_right_page::after, .garnish_right_page::after,.pastry_right_page::after{
+        bottom: 28px;
+        right: 41px;
+      }
+
+      .text {
+        font-size: 14px;
+    }
+
+    .sub_text {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .button {
+        font-size: 13px;
+    }
+
+    .consalt_right_page_box, .garnish_right_page_box, .pastry_right_page_wrapper{
+        height: calc(100vh - 65px);
+        padding: 0px 40px 57px 40px;
+    }
+
+    .garnish_right_page_wrapper, .garnish_left_page_wrapper{
+        gap: 28px 14px;
+    }
+      
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+    .wrapper{
+        flex-direction: column;
+        height: 100%;
+        border: none;
+    }
+
+    .head_title_text, 
+    .head_title, 
+    .head_img_wrapper, 
+    .awards_left_page, 
+    .awards_right_page,
+    .consalt_left_page,
+    .consalt_right_page,
+    .garnish_left_page,
+    .garnish_right_page,
+    .mona_lisa_right_page,
+    .pastry_left_page,
+    .pastry_right_page,
+    .footer_right_page,
+    footer{
+        width: 100%;
+    }
+
+    .consalt_left_page_wrapper,
+    .consalt_right_page_grid_wrap,
+    .consalt_right_page_grid_third,
+    .garnish_left_page_wrapper,
+    .awards_right_page_img,
+    .pastry_left_page,
+    .pastry_left_page_wrapper,
+    footer{
+        height: 100%;
+    }
+
+    .head_title, 
+    .head_img_wrapper,
+    .awards_left_page,
+    .awards_right_page,
+    .consalt_left_page,
+    .consalt_right_page,
+    .garnish_left_page,
+    .garnish_right_page,
+    .mona_lisa_right_page,
+    .pastry_left_page,
+    .pastry_right_page,
+    .footer_right_page,
+    footer{
+        border: 1px solid black;
+    }
+
+    .head_title, 
+    .head_img_wrapper,
+    .awards_right_page,
+    .consalt_left_page,
+    .consalt_right_page,
+    .garnish_right_page,
+    .pastry_right_page{
+        margin-top: 10px;
+        height: calc(100vh - 20px);
+    }
+
+    .awards_left_page,
+    .garnish_left_page,
+    .mona_lisa_right_page,
+    .pastry_left_page_wrapper,
+    .footer_right_page{
+        height: calc(100vh - 20px);
+    }
+
+    .awards_left_page {
+        padding: 81px;
+    }
+    
+    .awards_right_page_wrapper{
+        padding: 0px 81px 81px 81px;
+        height: calc(100vh - 84px);
+    }
+
+    .awards_wrapper{
+        gap: 0px 18px;
+    }
+
+    .awards_left_page::after{
+        left: 85px;
+        bottom: 42px;
+    }
+
+    .awards_right_page::after,
+    .pastry_right_page::after{
+        right: 85px;
+        bottom: 42px;
+    }
+
+    .sign{
+        padding: 35px 81px;
+    }
+
+    .awards_text::before{
+        left: 0%;
+    }
+
+    .consalt_left_page{
+        padding: 81px;
+        margin-top: 0;
+    }
+
+
+    .consalt_left_page_grid_first{
+        background-position: center bottom;
+    }
+
+    .consalt_left_page_grid_fourth, .mona_lisa_right_page{
+        background-position: center right;
+    }
+
+    .consalt_right_page_wrapper{
+        gap: 32px 26px;
+        height: 100%;
+    }
+
+    .subtitle{
+        line-height: 30px;
+    }
+
+    .text{
+        font-size: 16px;
+    }
+
+    .sub_text{
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .mona_lisa_left_page, .footer_left_page{
+        display: none;
+    }
+
+    .mona_lisa_right_page{
+        background-image: url('/images/monaLizaImg_adapt.jpg');
+        background-size: cover;
+    }
+
+    .mona_lisa{
+        background-image: none;
+    }
+
+    .footer_right_page_form{
+        position: absolute;
+        transform: translate(-50%, -40%);
+    }
+
+    footer{
+        background-image: url('/images/footer_mob.jpg');
+        background-position: center;
+        background-size: cover;
+        margin-top: 10px !important;
+    }
+}
+
+@media (max-width: 767px){
+
+    .wrapper{
+        flex-direction: column;
+        height: 100%;
+        border: none;
+    }
+
+    .head_title, 
+    .head_img_wrapper,
+    .awards_left_page,
+    .awards_right_page,
+    .consalt_left_page,
+    .consalt_right_page,
+    .garnish_left_page,
+    .garnish_right_page,
+    .pastry_left_page,
+    .pastry_right_page,
+    .footer_right_page{
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    .head_title, 
+    .head_img_wrapper,
+    .awards_right_page,
+    .consalt_left_page,
+    .consalt_right_page,
+    .garnish_right_page,
+    .pastry_right_page,
+    .footer_right_page{
+        margin-top: 10px; 
+    }
+
+    .head_title, 
+    .head_img_wrapper,
+    .awards_left_page,
+    .consalt_left_page,
+    .consalt_right_page,
+    .footer_right_page{
+        height: calc(100vh - 20px);
+    }
+
+    .awards_left_page,
+    .consalt_left_page {
+        padding: 81px;
+    }
+
+    .awards_text{
+        width: 80%;
+    }
+
+    .awards_wrapper{
+        gap: 0px 45px;
+    }
+
+    .contest{
+        font-size: 12px;
+    }
+
+    .awards_text::before{
+        left: -27%;
+    }
+    .awards_text::after{
+        left: 95%;
+    }
+
+    .consalt_left_page{
+        margin-top: 0;
+    }
+
+
+    .consalt_right_page_grid_wrap{
+        height: 100%;
+    }
+
+    .text, .sub_text, .button{
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .garnish_left_page_wrapper{
+        height: calc(100vh - 81px);
+        gap: 50px 20px;
+    }
+
+    .garnish_right_page_box,
+    .pastry_right_page_wrapper{
+        height: calc(100vh - 74px);
+    }
+
+    .mona_lisa{
+        background-image: url('/images/monaLizaImg_adapt.jpg');
+        background-position: center center;
+    }
+
+    .pastry_right_page,
+    footer{
+        height: 100%;
+    }
+
+    footer{
+        background-image: url('/images/footer_mob.jpg');
+        background-position: center;
+        background-size: cover;
+        border: 1px solid black;
+        margin-top: 10px !important;
+    }
+
+
+    .footer_right_page_form{
+        position: absolute;
+        transform: translate(-50%, -50%)
+    }
+}
+
+@media (max-width: 663px){
+    .wrapper{
+        flex-direction: column;
+        border: none;
+    }
+
+    h1, h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .awards_wrapper{
+        gap: 0px 49px;
+    }
+    .regalia,
+    .year,
+    .button{
+        font-size: 12px;
+    }
+
+    .contest{
+        font-size: 10px;
+    }
+
+    .subtitle{
+        line-height: 25px;
+    }
+    .sub_text, .button{
+        line-height: 17px;
+    }
+
+    .button{
+        padding: 6px;
+    }
+
+    .consalt_right_page_box {
+        height: calc(100vh - 73px);
+    }
+
+    .consalt_left_page_wrapper {
+        height: calc(100vh - 165px);
+    }
+
+    .text_pastry{
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 580px){
+    .head_title_text{
+        width: 70%;
+    }
+
+    .head_img{
+        background-image: url('/images/headImg480.jpg');
+    }
+
+    .awards_left_page,
+    .consalt_left_page{
+        padding: 45px;
+    }
+
+    .awards_right_page_wrapper,
+    .consalt_right_page_box,
+    .garnish_right_page_box,
+    .pastry_right_page_wrapper{
+        padding: 0px 45px 45px 45px;
+    }
+
+    .sign{
+        padding: 18px 40px;
+    }
+
+    .awards_wrapper{
+        gap: 25px 30px;
+    }
+
+    .awards_right_page_img{
+       height: 100%;
+    }
+
+    .awards_wrapper{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 4px 100px 100px 100px 100px auto;
+        height: 100%;
+    }
+
+    .subtitle_grid{
+        text-align: center;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    
+    .award {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 60px;
+    }
+    
+    .award_first{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .award_second{
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+    
+    .award_third{
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    } 
+    .award_fourth{
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+
+    .awards_img{
+        background-image: url('/images/appleImg.jpg');
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 85%;
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+        align-self: end;
+    }
+
+    .regalia {
+        font-size: 15px;
+    }
+
+    .regalia_line{
+        line-height: normal;
+    }
+
+    .contest, .year{
+        font-size: 14px;
+    }
+
+    .awards_text::after {
+        left: 85%;
+    }
+
+    .awards_text::before{
+        left: 0%;
+    }
+
+    .awards_left_page::after{
+        bottom: 15px;
+        left: 50px;
+    }
+
+    .awards_right_page::after{
+        bottom: 15px;
+        right: 50px;
+    }
+
+    .consalt_left_page::after,
+    .garnish_left_page::after{
+        left: 51px;
+        bottom: 21px;
+    }
+
+    .consalt_right_page::after,
+    .garnish_right_page::after,
+    .pastry_right_page::after{
+        bottom: 21px;
+        right: 51px;
+    }
+
+
+    .sub_text{
+        font-size: 12px;
+    }
+
+    .garnish_left_page{
+        padding: 45px;
+    }
+
+    .garnish_right_page_wrapper{
+        gap: 50px 19px;
+    }
+
+    .pastry_right_page_wrapper{
+        display: block;
+    }
+
+    .button_pastry{
+        bottom: -5%;
+        margin-bottom: 10px;
+    }
+
+    .pastry_right_page_grid_first{
+        height: 50%;
+    }
+
+    .pastry_right_page_grid_second {
+        margin-top: 20px;
+        background-position:  center center;
+        height: 47%;
+    }
+}
+
+@media (max-width: 480px){
+    .awards_left_page{
+        width: 100%;
+        height: calc(100vh - 0px);
+    }
+
+    .awards_right_page{
+        width: 100%;
+    }
+
+    .awards_right_page_img{
+        background-image: url('/images/awardsImg480.WEBP');
+    }
+
+    .awards_text {
+        padding-top: 35px;
+        width: 100%;
+    }
+
+    .regalia{
+        font-size: 15px;
+    }
+
+    .contest,
+    .year{
+        font-size: 14px;
+    }
+
+    .sign{
+        padding: 18px 22px;
+    }
+
+    .awards_text::before, .awards_text::after{
+        width: 50%;
+        height: 17vh;
+    }
+
+    .awards_text::before{
+        left: 10%;
+    }
+
+    .awards_text::after{
+        left: 73%;
+    }
+
+    .awards_left_page::after,
+    .consalt_left_page::after,
+    .garnish_left_page::after{
+        bottom: 15px;
+        left: 26px;
+    }
+
+    .awards_right_page::after,
+    .consalt_right_page::after,
+    .garnish_right_page::after,
+    .pastry_right_page::after{
+        bottom: 15px;
+        right: 28px;
+    }
+
+    .subtitle{
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+
+    .text_consalt{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .sub_text{
+        font-size: 12px;
+    }
+
+    .consalt_left_page_wrapper{
+        gap: 15px;
+    }
+
+    .consalt_left_page,
+    .garnish_left_page,
+    .awards_left_page{
+        padding: 20px 20px 42px 20px;
+    }
+
+    .consalt_right_page_box,
+    .garnish_right_page_box,
+    .pastry_right_page_wrapper,
+    .awards_right_page_wrapper{
+        padding: 0px 20px 42px 20px;
+    }
+
+    .garnish_left_page_wrapper, .garnish_right_page_wrapper{
+        gap: 33px 8px;
+    }
+
+    .pastry_right_page_wrapper{
+        display: block;
+    }
+
+    footer{
+        background-size: cover;
+    }
+
+    .register_name, .register_surname{
+        width: 90%;
+    }
+}
