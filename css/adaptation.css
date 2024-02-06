@@ -44,8 +44,33 @@
         width: 70%;
     }
 
-    .awards_left_page, .consalt_left_page, .garnish_left_page {
+    .awards_left_page,
+    .consalt_left_page,
+    .garnish_left_page {
         padding: 40px 40px 57px 40px;
+    }
+
+    .awards_right_page_wrapper,
+    .consalt_right_page_box,
+    .garnish_right_page_box,
+    .pastry_right_page_wrapper{
+        padding: 0px 40px 57px 40px;
+        height: calc(100vh - 65px);
+    }
+
+    .awards_left_page::after,
+    .consalt_left_page::after,
+    .garnish_left_page::after{
+        bottom: 28px;
+        left: 44px;
+    }
+    
+    .awards_right_page::after,
+    .consalt_right_page::after,
+    .garnish_right_page::after,
+    .pastry_right_page::after{
+        bottom: 28px;
+        right: 41px;
     }
 
     .awards_wrapper{
@@ -72,28 +97,13 @@
     .sign{
         padding: 15px 40px;
     }
-
-    .awards_right_page_wrapper{
-        padding: 0px 40px 57px 40px;
-        height: calc(100vh - 68px);
-    }
     
     .awards_right_page_img{
         height: 100%;
     }
 
-    .awards_left_page::after, .consalt_left_page::after, .garnish_left_page::after{
-        bottom: 28px;
-        left: 44px;
-      }
-    
-    .awards_right_page::after, .consalt_right_page::after, .garnish_right_page::after,.pastry_right_page::after{
-        bottom: 28px;
-        right: 41px;
-      }
-
-      .text {
-        font-size: 14px;
+    .text {
+    font-size: 14px;
     }
 
     .sub_text {
@@ -105,18 +115,16 @@
         font-size: 13px;
     }
 
-    .consalt_right_page_box, .garnish_right_page_box, .pastry_right_page_wrapper{
-        height: calc(100vh - 65px);
-        padding: 0px 40px 57px 40px;
-    }
-
-    .garnish_right_page_wrapper, .garnish_left_page_wrapper{
+    .garnish_right_page_wrapper,
+    .garnish_left_page_wrapper{
         gap: 28px 14px;
     }
-      
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px){
+    .head_title_text{
+        width: 100%;
+    }
 
     .wrapper{
         flex-direction: column;
@@ -124,76 +132,32 @@
         border: none;
     }
 
-    .head_title_text, 
     .head_title, 
-    .head_img_wrapper, 
-    .awards_left_page, 
-    .awards_right_page,
-    .consalt_left_page,
-    .consalt_right_page,
-    .garnish_left_page,
-    .garnish_right_page,
-    .mona_lisa_right_page,
-    .pastry_left_page,
-    .pastry_right_page,
-    .footer_right_page,
-    footer{
+    .head_img_wrapper{
         width: 100%;
-    }
-
-    .consalt_left_page_wrapper,
-    .consalt_right_page_grid_wrap,
-    .consalt_right_page_grid_third,
-    .garnish_left_page_wrapper,
-    .awards_right_page_img,
-    .pastry_left_page,
-    .pastry_left_page_wrapper,
-    footer{
-        height: 100%;
-    }
-
-    .head_title, 
-    .head_img_wrapper,
-    .awards_left_page,
-    .awards_right_page,
-    .consalt_left_page,
-    .consalt_right_page,
-    .garnish_left_page,
-    .garnish_right_page,
-    .mona_lisa_right_page,
-    .pastry_left_page,
-    .pastry_right_page,
-    .footer_right_page,
-    footer{
         border: 1px solid black;
-    }
-
-    .head_title, 
-    .head_img_wrapper,
-    .awards_right_page,
-    .consalt_left_page,
-    .consalt_right_page,
-    .garnish_right_page,
-    .pastry_right_page{
         margin-top: 10px;
-        height: calc(100vh - 20px);
+        height: calc(100vh - 14px);
     }
 
-    .awards_left_page,
-    .garnish_left_page,
-    .mona_lisa_right_page,
-    .pastry_left_page_wrapper,
-    .footer_right_page{
+    .head_title{
         height: calc(100vh - 20px);
     }
-
+    
     .awards_left_page {
-        padding: 81px;
+        padding: 81px 81px 81px 81px;
+        width: 100%;
+        border: 1px solid black;
+        height: calc(100vh - 20px);
     }
     
     .awards_right_page_wrapper{
         padding: 0px 81px 81px 81px;
         height: calc(100vh - 84px);
+    }
+
+    .awards_right_page_img{
+        height: 100%;
     }
 
     .awards_wrapper{
@@ -207,8 +171,8 @@
 
     .awards_right_page::after,
     .pastry_right_page::after{
-        right: 85px;
         bottom: 42px;
+        right: 85px;
     }
 
     .sign{
@@ -219,9 +183,24 @@
         left: 0%;
     }
 
+    .consalt_left_page,
+    .consalt_right_page {
+        width: 100%;
+        border: 1px solid black;
+        margin-top: 10px;
+        height: calc(100vh - 20px);
+    }
+
     .consalt_left_page{
         padding: 81px;
         margin-top: 0;
+    }
+
+    .consalt_left_page_wrapper,
+    .consalt_right_page_grid_wrap,
+    .consalt_right_page_grid_third,
+    .garnish_left_page_wrapper{
+        height: 100%;
     }
 
 
@@ -229,7 +208,7 @@
         background-position: center bottom;
     }
 
-    .consalt_left_page_grid_fourth, .mona_lisa_right_page{
+    .consalt_left_page_grid_fourth{
         background-position: center right;
     }
 
@@ -251,28 +230,102 @@
         line-height: 22px;
     }
 
-    .mona_lisa_left_page, .footer_left_page{
+    .garnish_left_page {
+        width: 100%;
+        height: calc(100vh - 20px);
+        border: 1px solid black;
+    }
+
+    .garnish_right_page_box{
+        height: calc(100vh - 84px);
+    }
+
+    .mona_lisa_left_page,
+    .footer_left_page{
         display: none;
     }
 
     .mona_lisa_right_page{
+        width: 100%;
+        border: 1px solid black;
         background-image: url('/images/monaLizaImg_adapt.jpg');
         background-size: cover;
+        background-position: center right;
+        height: calc(100vh - 20px);
+    }
+
+    .pastry_right_page{
+        width: 100%;
+        border: 1px solid black;
+        margin-top: 10px;
+        height: calc(100vh - 20px);
+    }
+
+    .footer_right_page{
+        width: 100%;
+        height: calc(100vh - 20px);
+        border: 1px solid black;
+    }
+
+    .garnish_right_page{
+        width: 100%;
+        border: 1px solid black;
+        margin-top: 10px;
+        height: calc(100vh - 20px);
+    }
+
+    .awards_right_page{
+        width: 100%;
+        border: 1px solid black;
+        margin-top: 10px;
+        height: calc(100vh - 9px);
     }
 
     .mona_lisa{
         background-image: none;
     }
 
+    .button_mona_lisa{
+        display: none !important;
+    }
+
+    .button_mona_lisa_adapt{
+        display: block;
+    }
+
+    .pastry_left_page{
+        border: 1px solid black;
+        width: 100%;
+        height: 100%;
+    }
+
+   
+
+    .pastry_right_page_wrapper{
+        height: calc(100% - 84px);
+    }
+
+    .pastry_left_page_wrapper{
+        height: 100%;
+        height: calc(100vh - 20px);
+    }
+
+    
+
     .footer_right_page_form{
         position: absolute;
         transform: translate(-50%, -40%);
     }
 
+    
+
     footer{
         background-image: url('/images/footer_mob.jpg');
         background-position: center;
         background-size: cover;
+        border: 1px solid black;
+        height: 100%;
+        width: 100%;
         margin-top: 10px !important;
     }
 }
@@ -285,44 +338,28 @@
         border: none;
     }
 
-    .head_title, 
-    .head_img_wrapper,
-    .awards_left_page,
-    .awards_right_page,
-    .consalt_left_page,
-    .consalt_right_page,
-    .garnish_left_page,
-    .garnish_right_page,
-    .pastry_left_page,
-    .pastry_right_page,
-    .footer_right_page{
+    .head_title, .head_img_wrapper{
         width: 100%;
         border: 1px solid black;
+        margin-top: 10px;
+        height: calc(100vh - 14px);
     }
 
-    .head_title, 
-    .head_img_wrapper,
-    .awards_right_page,
-    .consalt_left_page,
-    .consalt_right_page,
-    .garnish_right_page,
-    .pastry_right_page,
-    .footer_right_page{
-        margin-top: 10px; 
+    .head_title{
+        height: 100vh;
     }
 
-    .head_title, 
-    .head_img_wrapper,
-    .awards_left_page,
-    .consalt_left_page,
-    .consalt_right_page,
-    .footer_right_page{
-        height: calc(100vh - 20px);
+    .awards_left_page {
+        padding: 81px 81px 81px 81px;
+        width: 100%;
+        border: 1px solid black;
+        height: calc(100vh - 7px);
     }
 
-    .awards_left_page,
-    .consalt_left_page {
-        padding: 81px;
+    .awards_right_page{
+        width: 100%;
+        border: 1px solid black;
+        margin-top: 10px;
     }
 
     .awards_text{
@@ -344,18 +381,46 @@
         left: 95%;
     }
 
+    .consalt_left_page,
+    .consalt_right_page {
+        width: 100%;
+        border: 1px solid black;
+        margin-top: 10px;
+        height: 100%;
+    }
+
     .consalt_left_page{
+        padding: 81px;
         margin-top: 0;
+    }
+
+    .consalt_left_page_wrapper{
+        height: calc(100vh - 81px);
+    }
+
+    .consalt_right_page_box{
+        height: calc(100vh - 55px);
     }
 
 
     .consalt_right_page_grid_wrap{
         height: 100%;
     }
-
     .text, .sub_text, .button{
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 14px;line-height: 18px;
+    }
+
+    .garnish_left_page {
+        width: 100%;
+        height: 100%;
+        border: 1px solid black;
+    }
+
+    .garnish_right_page{
+        width: 100%;
+        border: 1px solid black;
+        margin-top: 10px;
+        height: 100%;
     }
 
     .garnish_left_page_wrapper{
@@ -363,8 +428,7 @@
         gap: 50px 20px;
     }
 
-    .garnish_right_page_box,
-    .pastry_right_page_wrapper{
+    .garnish_right_page_box{
         height: calc(100vh - 74px);
     }
 
@@ -373,9 +437,35 @@
         background-position: center center;
     }
 
-    .pastry_right_page,
-    footer{
+    .button_mona_lisa{
+        display: none;
+    }
+
+    .button_mona_lisa_adapt{
+        display: block;
+        width: 60%;
+    }
+
+    .pastry_left_page{
+        border: 1px solid black;
+        width: 100%;
         height: 100%;
+    }
+
+    .pastry_left_page_wrapper{
+        height: 100%;
+        height: calc(100vh - 14px);
+    }
+
+    .pastry_right_page{
+        width: 100%;
+        border: 1px solid black;
+        margin-top: 10px;
+        height: 100%;
+    }
+
+    .pastry_right_page_wrapper{
+        height: calc(100vh - 74px);
     }
 
     footer{
@@ -383,6 +473,8 @@
         background-position: center;
         background-size: cover;
         border: 1px solid black;
+        height: 100%;
+        width: 100%;
         margin-top: 10px !important;
     }
 
@@ -391,9 +483,17 @@
         position: absolute;
         transform: translate(-50%, -50%)
     }
+
+    .footer_right_page{
+        width: 100%;
+        height: calc(100vh - 41px);
+        border: 1px solid black;
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 663px){
+
     .wrapper{
         flex-direction: column;
         border: none;
@@ -407,6 +507,7 @@
     .awards_wrapper{
         gap: 0px 49px;
     }
+
     .regalia,
     .year,
     .button{
@@ -426,6 +527,11 @@
 
     .button{
         padding: 6px;
+    }
+
+    .button_mona_lisa_adapt{
+        display: block;
+        width: 70%;
     }
 
     .consalt_right_page_box {
@@ -451,14 +557,13 @@
     }
 
     .awards_left_page,
-    .consalt_left_page{
+    .garnish_left_page{
         padding: 45px;
     }
 
     .awards_right_page_wrapper,
     .consalt_right_page_box,
-    .garnish_right_page_box,
-    .pastry_right_page_wrapper{
+    .garnish_right_page_box{
         padding: 0px 45px 45px 45px;
     }
 
@@ -535,6 +640,7 @@
         font-size: 14px;
     }
 
+
     .awards_text::after {
         left: 85%;
     }
@@ -542,6 +648,7 @@
     .awards_text::before{
         left: 0%;
     }
+
 
     .awards_left_page::after{
         bottom: 15px;
@@ -551,6 +658,10 @@
     .awards_right_page::after{
         bottom: 15px;
         right: 50px;
+    }
+
+    .consalt_left_page{
+        padding: 45px;
     }
 
     .consalt_left_page::after,
@@ -571,15 +682,12 @@
         font-size: 12px;
     }
 
-    .garnish_left_page{
-        padding: 45px;
-    }
-
     .garnish_right_page_wrapper{
         gap: 50px 19px;
     }
 
     .pastry_right_page_wrapper{
+        padding: 0px 45px 45px 45px;
         display: block;
     }
 
@@ -599,14 +707,22 @@
     }
 }
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
     .awards_left_page{
         width: 100%;
+        padding: 20px 20px 42px 20px;
         height: calc(100vh - 0px);
     }
 
     .awards_right_page{
         width: 100%;
+    }
+
+    .awards_right_page_wrapper,
+    .pastry_right_page_wrapper,
+    .garnish_right_page_box,
+    .consalt_right_page_box{
+        padding: 0px 20px 42px 20px;
     }
 
     .awards_right_page_img{
@@ -622,7 +738,10 @@
         font-size: 15px;
     }
 
-    .contest,
+    .contest{
+        font-size: 14px;
+    }
+
     .year{
         font-size: 14px;
     }
@@ -631,7 +750,8 @@
         padding: 18px 22px;
     }
 
-    .awards_text::before, .awards_text::after{
+    .awards_text::before, 
+    .awards_text::after{
         width: 50%;
         height: 17vh;
     }
@@ -645,16 +765,16 @@
     }
 
     .awards_left_page::after,
-    .consalt_left_page::after,
-    .garnish_left_page::after{
+    .garnish_left_page::after,
+    .consalt_left_page::after{
         bottom: 15px;
         left: 26px;
     }
 
     .awards_right_page::after,
-    .consalt_right_page::after,
+    .pastry_right_page::after,
     .garnish_right_page::after,
-    .pastry_right_page::after{
+    .consalt_right_page::after{
         bottom: 15px;
         right: 28px;
     }
@@ -677,16 +797,8 @@
     }
 
     .consalt_left_page,
-    .garnish_left_page,
-    .awards_left_page{
+    .garnish_left_page{
         padding: 20px 20px 42px 20px;
-    }
-
-    .consalt_right_page_box,
-    .garnish_right_page_box,
-    .pastry_right_page_wrapper,
-    .awards_right_page_wrapper{
-        padding: 0px 20px 42px 20px;
     }
 
     .garnish_left_page_wrapper, .garnish_right_page_wrapper{
@@ -701,7 +813,9 @@
         background-size: cover;
     }
 
-    .register_name, .register_surname{
+    .register_name, 
+    .register_surname{
         width: 90%;
     }
+
 }
