@@ -394,7 +394,7 @@ button.lake{
 }
 
 .consalt_left_page_grid_first{
-    background-image: url('./images/consaltLeftImg.jpg');
+    background-image: url('../images/consaltLeftImg.jpg');
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -402,7 +402,7 @@ button.lake{
 }
 
 .consalt_left_page_grid_fourth{
-    background-image: url('./images/consaltRightImg.jpg');
+    background-image: url('../images/consaltRightImg.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -455,7 +455,7 @@ button.lake{
 }
 
 .consalt_right_page_grid_second{
-    background-image: url('./images/dinnerTopImg.jpg');
+    background-image: url('../images/dinnerTopImg.jpg');
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -473,7 +473,7 @@ button.lake{
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url('./images/dinnerBottomImg.jpg');
+    background-image: url('../images/dinnerBottomImg.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -560,7 +560,7 @@ button.lake{
 .garnish_left_page_grid_second{
     width: 100%;
     height: 100%;
-    background-image: url('./images/garnishTopImg.jpg');
+    background-image: url('../images/garnishTopImg.jpg');
     background-size: cover;
     background-position: center bottom;
     grid-column: 2 / 3;
@@ -577,7 +577,7 @@ button.lake{
 .garnish_left_page_grid_third_wrap{
     width: 100%;
     height: 100%;
-    background-image: url('./images/garnishBottomImg.jpg');
+    background-image: url('../images/garnishBottomImg.jpg');
     background-size: cover;
     background-position: center top;
 }
@@ -596,7 +596,7 @@ button.lake{
 }
 
 .garnish_right_page_grid_first{
-    background-image: url('./images/HelpTopImg.jpg');
+    background-image: url('../images/HelpTopImg.jpg');
     background-size: 100% 100%;
     width: 100%;
     height: 100%;
@@ -605,7 +605,7 @@ button.lake{
 }
 
 .garnish_right_page_grid_second{
-    background-image: url('./images/helpBottomImg.jpg');
+    background-image: url('../images/helpBottomImg.jpg');
     background-size: cover;
     background-position:  center center;
     width: 100%;
@@ -646,7 +646,7 @@ button.lake{
 
 .mona_lisa{
     position: relative;
-    background-image: url('./images/monaLizaImg.jpg');
+    background-image: url('../images/monaLizaImg.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -678,7 +678,7 @@ button.lake{
 }
 
 .pastry_left_page_wrapper{
-    background-image: url('./images/pastryLeftImg.jpg');
+    background-image: url('../images/pastryLeftImg.jpg');
     background-size: cover;
     background-position: center center;
     width: 100%;
@@ -708,7 +708,7 @@ button.lake{
 }
 
 .pastry_right_page_grid_second{
-    background-image: url('./images/lemonImg.jpg');
+    background-image: url('../images/lemonImg.jpg');
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -736,7 +736,7 @@ button.lake{
 /* ------footer---- */
 
 footer{
-    background-image: url('./images/footerImg.jpg');
+    background-image: url('../images/footerImg.jpg');
     background-size: cover;
     background-position: center center;
     width: 100%;
@@ -789,14 +789,14 @@ footer{
 }
 
 .whatsup_icon{
-    background-image: url('./images/whatsapp-logo.png');
+    background-image: url('../images/whatsapp-logo.png');
     background-size: cover;
     width: 36px;
     
 }
 
 .mail_icon{
-    background-image: url('./images/mail-logo.png');
+    background-image: url('../images/mail-logo.png');
     background-size: cover;
     width: 36px;
 }
